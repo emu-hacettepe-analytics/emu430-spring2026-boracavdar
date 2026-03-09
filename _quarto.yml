@@ -22,11 +22,9 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/boracavdar
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://www.linkedin.com/in/yusuf-bora-cavdar/
 
   sidebar:
     - title: "Assignments"
@@ -52,4 +50,7 @@ format:
 
 
 editor: visual
+
+
+
 
