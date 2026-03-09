@@ -1,30 +1,27 @@
 ---
 title: "About Me"
-sidebar: false 
 ---
 
-# Education
+## Professional Bio
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+I am Yusuf Bora Çavdar, a 3rd-year Industrial Engineering student at Hacettepe University, expecting to graduate in 2026. My academic interests are centered around **Data Science** and **Data Analytics**. I am passionate about using data-driven insights to optimize processes and solve complex engineering problems.
 
-# Work Experience
+I am particularly interested in exploring the intersections of data analytics within Human Resources, focusing on Training and Development. Additionally, I have a strong interest in Lean and Six Sigma methodologies.
 
-## Employements
+## Interests and Activities
 
-1.  Firm xxx, position xx, year xxx
+I actively participate in various student activities and personal development areas:
 
-2.  Firm yyy, position yyy, year yyy
+\* **Financial Literacy Society:** I am an active member interested in financial management and economic analysis.
 
-## Internships
+\* **Scouting:** As an active member of the scouting community, I focus on leadership, teamwork, and outdoor skills.
 
-1.  Firm aaa, position xx, year xxx
+\* **Language Learning:** I am currently dedicated to learning German to enhance my professional and international communication skills.
 
-2.  Firm bbb, position yyy, year yyy
+## Curriculum Vitae
 
-# Projects
+You can find my detailed professional background and academic achievements in my CV.
 
-# Competencies
+[Click here to download my CV (PDF)](files/cv.pdf)
 
-R, Quarto, Git, Python
 
-# Hobbies

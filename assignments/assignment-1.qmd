@@ -2,14 +2,62 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
+## Data Analysis
+
+In this section, the `polls_us_election_2016` dataset from the **dslabs** package is analyzed using R.
 
 ```{r}
-1 + 1
+library(dslabs)
+library(dplyr)
+
+# Load dataset
+data("polls_us_election_2016")
+data <- polls_us_election_2016
+
+# Personal variables
+my_first <- "Bora"
+my_birth_year <- 2004
+
+# Calculate k
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+
+# Display rows from original dataset
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+
+# Total NA values
+sum(is.na(data))
+
+# NA values per column (top 8)
+na_per_column <- sort(colSums(is.na(data)), decreasing = TRUE)
+head(na_per_column, 8)
+
+# Replace NA values
+new_data <- data %>%
+  mutate(
+    across(where(is.numeric), ~ ifelse(is.na(.), my_birth_year + k, .)),
+    across(where(is.character), ~ ifelse(is.na(.), paste0(my_first, "_", k), .)),
+    across(where(is.factor), ~ {
+      x <- as.character(.)
+      x[is.na(x)] <- paste0(my_first, "_", k)
+      x
+    })
+  )
+
+# Display rows from new dataset
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+# Remaining NA values
+sum(is.na(new_data))
+
+# anyNA check
+anyNA(new_data)
 ```
-
-My first assignment has two parts.
-
-## (a)
-
-## (b)
