@@ -87,3 +87,5 @@ sum(is.na(new_data))
 # anyNA check
 anyNA(new_data)
 ```
+
+-   I also utilized Gemini to debug and correct errors in my R code.
