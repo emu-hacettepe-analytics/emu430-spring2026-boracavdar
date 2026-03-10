@@ -14,23 +14,19 @@ Questions
 
 1\. Open-Ended Question: What is Cem Vardar's "Evolutionary Design" approach, and why does he suggest it instead of replacing an entire system?
 
--   
-
-    **Answer:** It means improving a system step-by-step with small changes. He prefers this because big, total replacements are often too complicated and risky, while small improvements based on data are more likely to actually work in a real company.
+-   **Answer:** It means improving a system step-by-step with small changes. He prefers this because big, total replacements are often too complicated and risky, while small improvements based on data are more likely to actually work in a real company.
 
 2\. Multiple-Choice Question: Which of these tools does Cem Vardar say has been a "must-have" skill for over 20 years?
 
-a\) Neural Networks b) Deep Fakes **c) SQL (Structured Query Language)** d) Chat GPT
+a\) Neural Networks b) Deep Fakes c) SQL (Structured Query Language) d) Chat GPT
 
--   
-
-    **Answer: c) SQL**
+-   **Answer: c) SQL**
 
 AI Disclosure (Footnote)
 
-Hocanın kuralları gereği yapay zeka kullandığını belirtmen şart. Bu dipnotu sayfanın en altına ekleyebilirsin:
+I used Gemini 3 Flash to help me summarize the transcript of the Cem Vardar interview and to format the questions
 
-\[\^1\]: I used Gemini 3 Flash to help me summarize the transcript of the Cem Vardar interview and to format the questions
+<https://www.youtube.com/watch?v=Fi8-phj1X1A>
 
 ## Data Analysis
 
