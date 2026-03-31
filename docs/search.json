@@ -4,7 +4,7 @@
     "href": "project.html",
     "title": "Our Course Project",
     "section": "",
-    "text": "I’m honored to be a member of the [group name] project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to https://[your-project-url].\nSummary\n[provide a biref summary of your project]\n\n\n\n Back to top"
+    "text": "Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach\n\n\n\n\nYusuf Bora Çavdar\nOnur Furkan Gök\n\n\n\n\nThe primary objective of this project is to develop a Decision Support Model to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a “Seismic Vulnerability Index.” This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety.\n\n\n\nThe analysis will be grounded on three primary datasets sourced from the IBB Open Data Portal and TUIK:\n\nBuilding Inventory Dataset: Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.\nUrban Transformation Requirement Data: Provides official records of buildings identified as “In Need of Transformation” vs. “Not in Need” across districts.\nMunicipal Population Dataset (2019-2024): A time-series dataset showing population distribution and density across Istanbul’s 39 districts.\n\n\n\n\nThe project will follow a structured Data Science workflow:\n\nData Preprocessing: Cleaning and merging the datasets using dplyr and tidyr. Handling “Wide” to “Long” format conversions for population trends.\nExploratory Data Analysis (EDA): Visualizing the distribution of aged buildings and population hotspots using ggplot2.\nIndex Calculation: Implementing a weighted risk formula to score each neighborhood/district:\nRiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)\nFinal Output: A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul."
   },
   {
     "objectID": "index.html",
@@ -87,5 +87,40 @@
     "title": "My Blog",
     "section": "",
     "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project.html#project-title",
+    "href": "project.html#project-title",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach"
+  },
+  {
+    "objectID": "project.html#team-member",
+    "href": "project.html#team-member",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "Yusuf Bora Çavdar\nOnur Furkan Gök"
+  },
+  {
+    "objectID": "project.html#project-objective",
+    "href": "project.html#project-objective",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "The primary objective of this project is to develop a Decision Support Model to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a “Seismic Vulnerability Index.” This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety."
+  },
+  {
+    "objectID": "project.html#data-set-description",
+    "href": "project.html#data-set-description",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "The analysis will be grounded on three primary datasets sourced from the IBB Open Data Portal and TUIK:\n\nBuilding Inventory Dataset: Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.\nUrban Transformation Requirement Data: Provides official records of buildings identified as “In Need of Transformation” vs. “Not in Need” across districts.\nMunicipal Population Dataset (2019-2024): A time-series dataset showing population distribution and density across Istanbul’s 39 districts."
+  },
+  {
+    "objectID": "project.html#preliminary-plan",
+    "href": "project.html#preliminary-plan",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "The project will follow a structured Data Science workflow:\n\nData Preprocessing: Cleaning and merging the datasets using dplyr and tidyr. Handling “Wide” to “Long” format conversions for population trends.\nExploratory Data Analysis (EDA): Visualizing the distribution of aged buildings and population hotspots using ggplot2.\nIndex Calculation: Implementing a weighted risk formula to score each neighborhood/district:\nRiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)\nFinal Output: A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul."
   }
 ]

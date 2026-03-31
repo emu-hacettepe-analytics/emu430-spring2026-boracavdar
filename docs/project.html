@@ -299,7 +299,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-phase-1-initialization" id="toc-project-phase-1-initialization" class="nav-link active" data-scroll-target="#project-phase-1-initialization">Project Phase 1: Initialization</a>
+  <ul class="collapse">
+  <li><a href="#project-title" id="toc-project-title" class="nav-link" data-scroll-target="#project-title">Project Title</a></li>
+  <li><a href="#team-member" id="toc-team-member" class="nav-link" data-scroll-target="#team-member">Team Member</a></li>
+  <li><a href="#project-objective" id="toc-project-objective" class="nav-link" data-scroll-target="#project-objective">Project Objective</a></li>
+  <li><a href="#data-set-description" id="toc-data-set-description" class="nav-link" data-scroll-target="#data-set-description">Data Set Description</a></li>
+  <li><a href="#preliminary-plan" id="toc-preliminary-plan" class="nav-link" data-scroll-target="#preliminary-plan">Preliminary Plan</a></li>
+  </ul></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -328,12 +341,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I’m honored to be a member of the [group name] project team.</p>
-<p>Below, you’ll find a brief summary of our project. To access a detailed project description, please go to <a href="#0" class="uri">https://[your-project-url]</a>.</p>
-<p><strong>Summary</strong></p>
-<p>[provide a biref summary of your project]</p>
+<section id="project-phase-1-initialization" class="level1">
+<h1>Project Phase 1: Initialization</h1>
+<section id="project-title" class="level2">
+<h2 class="anchored" data-anchor-id="project-title">Project Title</h2>
+<p><strong>Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach</strong></p>
+</section>
+<section id="team-member" class="level2">
+<h2 class="anchored" data-anchor-id="team-member">Team Member</h2>
+<ul>
+<li><p><strong>Yusuf Bora Çavdar</strong></p></li>
+<li><p>Onur Furkan Gök</p></li>
+</ul>
+</section>
+<section id="project-objective" class="level2">
+<h2 class="anchored" data-anchor-id="project-objective">Project Objective</h2>
+<p>The primary objective of this project is to develop a <strong>Decision Support Model</strong> to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a <strong>“Seismic Vulnerability Index.”</strong> This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety.</p>
+</section>
+<section id="data-set-description" class="level2">
+<h2 class="anchored" data-anchor-id="data-set-description">Data Set Description</h2>
+<p>The analysis will be grounded on three primary datasets sourced from the <strong>IBB Open Data Portal</strong> and <strong>TUIK</strong>:</p>
+<ol type="1">
+<li><p><strong>Building Inventory Dataset:</strong> Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.</p></li>
+<li><p><strong>Urban Transformation Requirement Data:</strong> Provides official records of buildings identified as “In Need of Transformation” vs.&nbsp;“Not in Need” across districts.</p></li>
+<li><p><strong>Municipal Population Dataset (2019-2024):</strong> A time-series dataset showing population distribution and density across Istanbul’s 39 districts.</p></li>
+</ol>
+</section>
+<section id="preliminary-plan" class="level2">
+<h2 class="anchored" data-anchor-id="preliminary-plan">Preliminary Plan</h2>
+<p>The project will follow a structured Data Science workflow:</p>
+<ul>
+<li><p><strong>Data Preprocessing:</strong> Cleaning and merging the datasets using <code>dplyr</code> and <code>tidyr</code>. Handling “Wide” to “Long” format conversions for population trends.</p></li>
+<li><p><strong>Exploratory Data Analysis (EDA):</strong> Visualizing the distribution of aged buildings and population hotspots using <code>ggplot2</code>.</p></li>
+<li><p><strong>Index Calculation:</strong> Implementing a weighted risk formula to score each neighborhood/district:</p>
+<p>RiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)</p></li>
+<li><p><strong>Final Output:</strong> A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul.</p></li>
+</ul>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
