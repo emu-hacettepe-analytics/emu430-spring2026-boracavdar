@@ -39,6 +39,6 @@ The project will follow a structured Data Science workflow:
 
 -   **Index Calculation:** Implementing a weighted risk formula to score each neighborhood/district:
 
-    RiskIndex​=(Age\_Factor×0.4)+(Transformation\_Need×0.3)+(Population\_Density×0.3)
+    RiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)
 
 -   **Final Output:** A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul.
