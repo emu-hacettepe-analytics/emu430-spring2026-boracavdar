@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 1 – Yusuf Bora Çavdar’s Analytics Lab</title>
+<title>assignment-1 – Yusuf Bora Çavdar's Analytics Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -74,14 +39,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1f4f0a526e33a25f9ede20238f494f88.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b7d7e4963d0d63b27f52642e5120691d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1f4f0a526e33a25f9ede20238f494f88.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-73da95f1134fd7e133c602a1278d5084.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,174 +70,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -296,7 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -324,400 +124,191 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools tools-wide">
+            <div class="quarto-navbar-tools">
     <a href="https://github.com/boracavdar" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://www.linkedin.com/in/yusuf-bora-cavdar/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../assignments/assignment-1.html">Assignment 1</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../index.html" class="sidebar-logo-link">
-      </a>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../assignments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">My Assignments</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../assignments/assignment-1.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Assignment 1</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../assignments/assignment-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assignment 2</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link active" data-scroll-target="#data-analysis">Data Analysis</a></li>
-  </ul>
-</nav>
-</nav>
+  
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Assignment 1</h1>
+
+
+<style>
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background-color:#0b3d2e !important;
+  border-bottom:1px solid #14532d;
+}
+
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  color:#bbf7d0 !important;
+}
+
+/* ===== GENERAL ===== */
+
+body{
+  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
+  font-family:'Segoe UI', sans-serif;
+  color:#1f2937;
+}
+
+main.content{
+  padding-top:12px !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background: linear-gradient(135deg,#14532d,#22c55e);
+  color:white;
+  padding:55px 40px;
+  border-radius:22px;
+  text-align:center;
+  margin-bottom:24px;
+  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+}
+
+.hero h1{
+  font-size:2.8rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:750px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.7;
+  opacity:0.96;
+}
+
+/* ===== CARDS ===== */
+
+.card-box{
+  background:white;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
+  border:1px solid #dcfce7;
+  margin-bottom:18px;
+}
+
+.card-box h2{
+  color:#166534;
+  margin-bottom:12px;
+}
+
+/* ===== QUESTIONS ===== */
+
+.qa-box{
+  background:#f8fffa;
+  border:1px solid #dcfce7;
+  padding:18px;
+  border-radius:14px;
+  margin-bottom:12px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  margin-top:28px;
+  padding:12px;
+  color:#166534;
+  font-size:0.95rem;
+}
+
+</style>
+<div class="hero">
+<p>Assignment 1 – Task 3</p>
+<p>Video Summary &amp; Data Analysis</p>
+<p>Industrial Engineering and Data Science integration based on Cem Vardar’s interview.</p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Assignment 1 - Task 3: Video Summary and Questions</p>
+<div class="card-box">
 <p>Summary: Industrial Engineering and Data Science</p>
-<p>I watched the interview with Cem Vardar, who has a PhD from Arizona State and spent years working at companies like Intel and Carvana. The main thing he talks about is how Industrial Engineering (IE) and Data Science actually work together in the real world.</p>
-<p>According to Vardar, being an Industrial Engineer is all about solving problems in “complex systems”. He makes a very good point that Data Science isn’t a separate career path, but rather a tool—like a hammer—that we use to fix business problems. He also mentions something called “Evolutionary Design.” This basically means that instead of trying to replace a whole system at once (which usually fails), it is much better to make small, data-driven improvements one by one. Lastly, he emphasizes that even though technology changes fast, basic skills like SQL and Excel are still the most important things for an engineer to master</p>
+<p>I watched the interview with Cem Vardar, who holds a PhD from Arizona State University and has worked at companies such as Intel and Carvana.</p>
+<p>The main idea of the interview is the strong relationship between Industrial Engineering (IE) and Data Science in real-world applications.</p>
+<p>He explains that Industrial Engineering focuses on solving problems in complex systems, while Data Science should be seen as a tool for solving business problems, rather than a separate career path.</p>
+<p>A key concept he introduces is “Evolutionary Design”, which emphasizes improving systems gradually through small, data-driven changes instead of completely replacing them at once.</p>
+<p>He also highlights that foundational tools like SQL and Excel remain essential, even as technology evolves rapidly.</p>
+</div>
+<div class="card-box">
 <p>Questions</p>
-<p>1. Open-Ended Question: What is Cem Vardar’s “Evolutionary Design” approach, and why does he suggest it instead of replacing an entire system?</p>
-<ul>
-<li><strong>Answer:</strong> It means improving a system step-by-step with small changes. He prefers this because big, total replacements are often too complicated and risky, while small improvements based on data are more likely to actually work in a real company.</li>
-</ul>
-<p>2. Multiple-Choice Question: Which of these tools does Cem Vardar say has been a “must-have” skill for over 20 years?</p>
-<p>a) Neural Networks b) Deep Fakes c) SQL (Structured Query Language) d) Chat GPT</p>
-<ul>
-<li><strong>Answer: c) SQL</strong></li>
-</ul>
-<p>AI Disclosure (Footnote)</p>
-<p>I used Gemini 3 Flash to help me summarize the transcript of the Cem Vardar interview and to format the questions</p>
-<p><a href="https://www.youtube.com/watch?v=Fi8-phj1X1A" class="uri">https://www.youtube.com/watch?v=Fi8-phj1X1A</a></p>
-<section id="data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
-<p>In this section, the <code>polls_us_election_2016</code> dataset from the <strong>dslabs</strong> package is analyzed using R.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
+<div class="qa-box">
+<ol type="1">
+<li>Open-Ended Question</li>
+</ol>
+<p>What is Cem Vardar’s “Evolutionary Design” approach, and why does he suggest it instead of replacing an entire system?</p>
+<p>Answer: It refers to improving systems step-by-step using small, incremental changes. This approach is preferred because full system replacements are risky, complex, and often fail in real business environments, while gradual improvements are more reliable.</p>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dataset</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"polls_us_election_2016"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> polls_us_election_2016</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Personal variables</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Bora"</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">2004</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate k</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> (<span class="fu">nchar</span>(my_first) <span class="sc">+</span> my_birth_year) <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">+</span> <span class="dv">8</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>k</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 21</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display rows from original dataset</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(data, k)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(data, k)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>              state  startdate    enddate                pollster grade
-4188 South Carolina 2016-09-23 2016-10-06                   Ipsos    A-
-4189           Utah 2016-10-25 2016-10-31 Google Consumer Surveys     B
-4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+
-4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-
-4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-
-4193       New York 2016-02-28 2016-03-03           Siena College     A
-4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-
-4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A
-4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+
-4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-
-4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-
-4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-
-4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-
-4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+
-4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-
-4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-
-4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-
-4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A
-4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B
-4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-
-4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-
-     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson
-4188        258         lv           46.67         48.25              NA
-4189        245         lv           28.18         29.39            8.40
-4190       1036          v           50.00         36.00              NA
-4191        975         rv           42.00         36.00            7.00
-4192        971         rv           38.00         36.00            8.00
-4193        800         rv           57.00         34.00              NA
-4194        507         lv           46.00         43.00            7.00
-4195       1250         lv           43.00         45.00              NA
-4196        928          v           41.00         43.00            3.00
-4197        336         lv           39.38         53.08              NA
-4198       1056         lv           43.00         43.00            7.00
-4199        950         rv           39.00         36.00            9.00
-4200        955         rv           36.00         37.00            7.00
-4201        843          v           44.00         42.00              NA
-4202        170         lv           28.45         47.20              NA
-4203        538         lv           46.71         38.33              NA
-4204        452         lv           46.54         40.04              NA
-4205        683         lv           47.00         34.00            9.00
-4206        286         lv           21.33         35.05            9.99
-4207        446         lv           46.46         37.41              NA
-4208        600         lv           43.00         41.00              NA
-     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson
-4188               NA        46.20387      49.13322              NA
-4189               NA        33.61454      36.01090        7.458243
-4190               NA        47.81869      35.91267              NA
-4191               NA        46.44439      41.33270        2.791570
-4192               NA        42.46502      41.36491        3.791570
-4193               NA        56.98850      38.83402              NA
-4194               NA        47.79437      44.86935        4.022323
-4195               NA        39.90517      44.40152              NA
-4196               NA        43.28262      47.12021       -0.036293
-4197               NA        38.34430      54.36357              NA
-4198               NA        45.19351      46.65680        3.448447
-4199               NA        43.35339      41.19061        4.791570
-4200               NA        40.73937      42.33380        2.936299
-4201               NA        42.13165      43.55006              NA
-4202               NA        26.57791      45.43384              NA
-4203               NA        45.56387      38.22545              NA
-4204               NA        46.47852      40.48017              NA
-4205               NA        48.74781      39.07778        4.705020
-4206               NA        26.65200      40.57738        9.705791
-4207               NA        45.12949      37.10720              NA
-4208               NA        42.14966      42.05508              NA
-     adjpoll_mcmullin
-4188               NA
-4189               NA
-4190               NA
-4191               NA
-4192               NA
-4193               NA
-4194               NA
-4195               NA
-4196               NA
-4197               NA
-4198               NA
-4199               NA
-4200               NA
-4201               NA
-4202               NA
-4203               NA
-4204               NA
-4205               NA
-4206               NA
-4207               NA
-4208               NA</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total NA values</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 11604</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA values per column (top 8)</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>na_per_column <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">colSums</span>(<span class="fu">is.na</span>(data)), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(na_per_column, <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>rawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson 
-            4178             4178             1409             1409 
-           grade       samplesize            state        startdate 
-             429                1                0                0 </code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace NA values</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>new_data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(.), my_birth_year <span class="sc">+</span> k, .)),</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">where</span>(is.character), <span class="sc">~</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(.), <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k), .)),</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">where</span>(is.factor), <span class="sc">~</span> {</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>      x <span class="ot">&lt;-</span> <span class="fu">as.character</span>(.)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>      x[<span class="fu">is.na</span>(x)] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>      x</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Display rows from new dataset</span></span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k <span class="sc">%%</span> <span class="dv">2</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(new_data, k)</span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(new_data, k)</span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>              state  startdate    enddate                pollster grade
-4188 South Carolina 2016-09-23 2016-10-06                   Ipsos    A-
-4189           Utah 2016-10-25 2016-10-31 Google Consumer Surveys     B
-4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+
-4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-
-4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-
-4193       New York 2016-02-28 2016-03-03           Siena College     A
-4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-
-4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A
-4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+
-4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-
-4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-
-4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-
-4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-
-4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+
-4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-
-4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-
-4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-
-4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A
-4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B
-4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-
-4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-
-     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson
-4188        258         lv           46.67         48.25         2025.00
-4189        245         lv           28.18         29.39            8.40
-4190       1036          v           50.00         36.00         2025.00
-4191        975         rv           42.00         36.00            7.00
-4192        971         rv           38.00         36.00            8.00
-4193        800         rv           57.00         34.00         2025.00
-4194        507         lv           46.00         43.00            7.00
-4195       1250         lv           43.00         45.00         2025.00
-4196        928          v           41.00         43.00            3.00
-4197        336         lv           39.38         53.08         2025.00
-4198       1056         lv           43.00         43.00            7.00
-4199        950         rv           39.00         36.00            9.00
-4200        955         rv           36.00         37.00            7.00
-4201        843          v           44.00         42.00         2025.00
-4202        170         lv           28.45         47.20         2025.00
-4203        538         lv           46.71         38.33         2025.00
-4204        452         lv           46.54         40.04         2025.00
-4205        683         lv           47.00         34.00            9.00
-4206        286         lv           21.33         35.05            9.99
-4207        446         lv           46.46         37.41         2025.00
-4208        600         lv           43.00         41.00         2025.00
-     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson
-4188             2025        46.20387      49.13322     2025.000000
-4189             2025        33.61454      36.01090        7.458243
-4190             2025        47.81869      35.91267     2025.000000
-4191             2025        46.44439      41.33270        2.791570
-4192             2025        42.46502      41.36491        3.791570
-4193             2025        56.98850      38.83402     2025.000000
-4194             2025        47.79437      44.86935        4.022323
-4195             2025        39.90517      44.40152     2025.000000
-4196             2025        43.28262      47.12021       -0.036293
-4197             2025        38.34430      54.36357     2025.000000
-4198             2025        45.19351      46.65680        3.448447
-4199             2025        43.35339      41.19061        4.791570
-4200             2025        40.73937      42.33380        2.936299
-4201             2025        42.13165      43.55006     2025.000000
-4202             2025        26.57791      45.43384     2025.000000
-4203             2025        45.56387      38.22545     2025.000000
-4204             2025        46.47852      40.48017     2025.000000
-4205             2025        48.74781      39.07778        4.705020
-4206             2025        26.65200      40.57738        9.705791
-4207             2025        45.12949      37.10720     2025.000000
-4208             2025        42.14966      42.05508     2025.000000
-     adjpoll_mcmullin
-4188             2025
-4189             2025
-4190             2025
-4191             2025
-4192             2025
-4193             2025
-4194             2025
-4195             2025
-4196             2025
-4197             2025
-4198             2025
-4199             2025
-4200             2025
-4201             2025
-4202             2025
-4203             2025
-4204             2025
-4205             2025
-4206             2025
-4207             2025
-4208             2025</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remaining NA values</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(new_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># anyNA check</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(new_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
+<div class="qa-box">
+<ol start="2" type="1">
+<li>Multiple-Choice Question</li>
+</ol>
+<p>Which tool is described as a “must-have” skill for over 20 years?</p>
+<ol type="a">
+<li>Neural Networks</li>
+<li>Deep Fakes</li>
+<li>SQL (Structured Query Language)</li>
+<li>ChatGPT</li>
+</ol>
+<p>Answer: c) SQL</p>
 </div>
 </div>
-<ul>
-<li>I also utilized Gemini to debug and correct errors in my R code.</li>
-</ul>
+<div class="card-box">
+<p>AI Disclosure</p>
+<p>I used Gemini 3 Flash to:</p>
+<p>Summarize the interview transcript Format the questions Assist with clarity improvements in the write-up</p>
+</div>
+<div class="card-box">
+<p>Video Link</p>
+<p>https://www.youtube.com/watch?v=Fi8-phj1X1A</p>
+</div>
+<div class="card-box">
+<p>Data Analysis Section</p>
+<p>In this section, the polls_us_election_2016 dataset from the dslabs package is analyzed using R.</p>
+<p>library(dslabs) library(dplyr)</p>
+<p>data(“polls_us_election_2016”) data &lt;- polls_us_election_2016</p>
+<p>my_first &lt;- “Bora” my_birth_year &lt;- 2004</p>
+<p>k &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k</p>
+<p>if (k %% 2 == 0) { head(data, k) } else { tail(data, k) }</p>
+<p>sum(is.na(data))</p>
+<p>na_per_column &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_per_column, 8)</p>
+<p>new_data &lt;- data %&gt;% mutate( across(where(is.numeric), ~ ifelse(is.na(.), my_birth_year + k, .)), across(where(is.character), ~ ifelse(is.na(.), paste0(my_first, “<em>”, k), .)), across(where(is.factor), ~ { x &lt;- as.character(.) x[is.na(x)] &lt;- paste0(my_first, ”</em>”, k) x }) )</p>
+<p>if (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }</p>
+<p>sum(is.na(new_data)) anyNA(new_data)</p>
+<p>I also used Gemini AI to debug and correct errors in my R code.</p>
+</div>
+<div class="footer">
+<p>Made with 💚 using R and Quarto</p>
+</div>
+<p>```</p>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1116,15 +707,15 @@ Attaching package: 'dplyr'</code></pre>
     }
   });
   </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-page">
   <div class="nav-page nav-page-previous">
-      <a href="../assignments.html" class="pagination-link" aria-label="My Assignments">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">My Assignments</span>
+      <a href="../assignments.html" class="pagination-link" aria-label="assignments.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">assignments.html</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../assignments/assignment-2.html" class="pagination-link" aria-label="Assignment 2">
-        <span class="nav-page-text">Assignment 2</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../assignments/assignment-2.html" class="pagination-link" aria-label="assignment-2.html">
+        <span class="nav-page-text">assignment-2.html</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1146,4 +737,5 @@ Attaching package: 'dplyr'</code></pre>
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
