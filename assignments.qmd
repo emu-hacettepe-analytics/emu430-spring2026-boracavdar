@@ -1,9 +1,187 @@
 ---
-title: "My Assignments"
+title: ""
+format:
+  html:
+    theme: minty
+    toc: true
+    toc-location: left
+    page-layout: full
+    smooth-scroll: true
+    title-block-banner: false
+sidebar: false
 ---
 
-On this page, I showcase the assignment I conducted for the \[term and year, e.g. Spring 2026\] EMU430 Data Analytics course.
+```{=html}
+<style>
 
-Please use the left menu to navigate through my assignments.
+/* ===== NAVBAR ===== */
 
-The most recent update to this page was made on x/x/2026.
+.navbar{
+  background-color:#0b3d2e !important;
+  border-bottom:1px solid #14532d;
+}
+
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  color:#bbf7d0 !important;
+}
+
+/* ===== GENERAL ===== */
+
+body{
+  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
+  font-family:'Segoe UI', sans-serif;
+  color:#1f2937;
+}
+
+main.content{
+  padding-top:12px !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background: linear-gradient(135deg,#14532d,#22c55e);
+  color:white;
+  padding:60px 40px;
+  border-radius:22px;
+  text-align:center;
+  margin-bottom:24px;
+  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+}
+
+.hero h1{
+  font-size:3rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:720px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.7;
+  opacity:0.96;
+}
+
+/* ===== CARDS ===== */
+
+.card-box{
+  background:white;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
+  border:1px solid #dcfce7;
+  margin-bottom:18px;
+  transition:0.25s ease;
+}
+
+.card-box:hover{
+  transform:translateY(-4px);
+  box-shadow:0px 8px 20px rgba(34,197,94,0.14);
+}
+
+.card-box h2{
+  color:#166534;
+  margin-bottom:12px;
+}
+
+/* ===== INFO TAGS ===== */
+
+.tag{
+  display:inline-block;
+  background:#dcfce7;
+  color:#166534;
+  padding:8px 14px;
+  border-radius:999px;
+  margin:5px;
+  font-size:0.92rem;
+  font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  margin-top:28px;
+  padding:12px;
+  color:#166534;
+  font-size:0.95rem;
+}
+
+</style>
+
+::: {.hero}
+
+My Assignments
+
+Assignments and analytical works developed for the EMU430 Data Analytics course.
+
+This section contains coursework, data analysis projects, visualizations, and reports created throughout the semester.
+
+:::
+
+::: {.card-box}
+
+Course Information
+
+Course: EMU430 – Data Analytics
+Term: Spring 2026
+
+This page showcases my assignments, analytical approaches, and project outcomes developed during the course.
+
+Please use the navigation menu to explore individual assignments and related works.
+
+:::
+
+::: {.card-box}
+
+Topics Covered
+
+<span class="tag">Data Cleaning</span>
+<span class="tag">Visualization</span>
+<span class="tag">Statistical Analysis</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Exploratory Data Analysis</span>
+<span class="tag">Reporting</span>
+
+:::
+
+::: {.card-box}
+
+About These Assignments
+
+The assignments focus on applying analytical thinking and data-driven methodologies to real-world datasets.
+
+Each project includes:
+
+Data preprocessing and preparation
+Exploratory analysis
+Statistical interpretation
+Visualization techniques
+Analytical reporting
+
+The goal is to improve both technical and presentation skills in data analytics.
+
+:::
+
+::: {.card-box}
+
+Latest Update
+
+The most recent update to this page was made on 04/04/2026.
+
+More assignments and analytical reports will be added throughout the semester.
+
+:::
+
+<div class="footer">
+
+Made with 💚 using R and Quarto
+
+</div> ```

@@ -1,68 +1,221 @@
 ---
-title: "Assignment 1"
+title: ""
+format:
+  html:
+    theme: minty
+    toc: true
+    toc-location: left
+    page-layout: full
+    smooth-scroll: true
+    title-block-banner: false
+    code-fold: true
+    code-summary: "Show Code"
+sidebar: false
 ---
 
-Assignment 1 - Task 3: Video Summary and Questions
+```{=html}
+<style>
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background-color:#0b3d2e !important;
+  border-bottom:1px solid #14532d;
+}
+
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  color:#bbf7d0 !important;
+}
+
+/* ===== GENERAL ===== */
+
+body{
+  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
+  font-family:'Segoe UI', sans-serif;
+  color:#1f2937;
+}
+
+main.content{
+  padding-top:12px !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background: linear-gradient(135deg,#14532d,#22c55e);
+  color:white;
+  padding:55px 40px;
+  border-radius:22px;
+  text-align:center;
+  margin-bottom:24px;
+  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+}
+
+.hero h1{
+  font-size:2.8rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:750px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.7;
+  opacity:0.96;
+}
+
+/* ===== CARDS ===== */
+
+.card-box{
+  background:white;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
+  border:1px solid #dcfce7;
+  margin-bottom:18px;
+}
+
+.card-box h2{
+  color:#166534;
+  margin-bottom:12px;
+}
+
+/* ===== QUESTIONS ===== */
+
+.qa-box{
+  background:#f8fffa;
+  border:1px solid #dcfce7;
+  padding:18px;
+  border-radius:14px;
+  margin-bottom:12px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  margin-top:28px;
+  padding:12px;
+  color:#166534;
+  font-size:0.95rem;
+}
+
+</style>
+
+::: {.hero}
+
+Assignment 1 – Task 3
+
+Video Summary & Data Analysis
+
+Industrial Engineering and Data Science integration based on Cem Vardar’s interview.
+
+:::
+
+::: {.card-box}
 
 Summary: Industrial Engineering and Data Science
 
-I watched the interview with Cem Vardar, who has a PhD from Arizona State and spent years working at companies like Intel and Carvana. The main thing he talks about is how Industrial Engineering (IE) and Data Science actually work together in the real world.
+I watched the interview with Cem Vardar, who holds a PhD from Arizona State University and has worked at companies such as Intel and Carvana.
 
-According to Vardar, being an Industrial Engineer is all about solving problems in "complex systems". He makes a very good point that Data Science isn't a separate career path, but rather a tool—like a hammer—that we use to fix business problems. He also mentions something called "Evolutionary Design." This basically means that instead of trying to replace a whole system at once (which usually fails), it is much better to make small, data-driven improvements one by one. Lastly, he emphasizes that even though technology changes fast, basic skills like SQL and Excel are still the most important things for an engineer to master
+The main idea of the interview is the strong relationship between Industrial Engineering (IE) and Data Science in real-world applications.
+
+He explains that Industrial Engineering focuses on solving problems in complex systems, while Data Science should be seen as a tool for solving business problems, rather than a separate career path.
+
+A key concept he introduces is “Evolutionary Design”, which emphasizes improving systems gradually through small, data-driven changes instead of completely replacing them at once.
+
+He also highlights that foundational tools like SQL and Excel remain essential, even as technology evolves rapidly.
+
+:::
+
+::: {.card-box}
 
 Questions
 
-1\. Open-Ended Question: What is Cem Vardar's "Evolutionary Design" approach, and why does he suggest it instead of replacing an entire system?
+::: {.qa-box}
 
--   **Answer:** It means improving a system step-by-step with small changes. He prefers this because big, total replacements are often too complicated and risky, while small improvements based on data are more likely to actually work in a real company.
+1. Open-Ended Question
 
-2\. Multiple-Choice Question: Which of these tools does Cem Vardar say has been a "must-have" skill for over 20 years?
+What is Cem Vardar's "Evolutionary Design" approach, and why does he suggest it instead of replacing an entire system?
 
-a\) Neural Networks b) Deep Fakes c) SQL (Structured Query Language) d) Chat GPT
+Answer:
+It refers to improving systems step-by-step using small, incremental changes. This approach is preferred because full system replacements are risky, complex, and often fail in real business environments, while gradual improvements are more reliable.
 
--   **Answer: c) SQL**
+:::
 
-AI Disclosure (Footnote)
+::: {.qa-box}
 
-I used Gemini 3 Flash to help me summarize the transcript of the Cem Vardar interview and to format the questions
+2. Multiple-Choice Question
 
-<https://www.youtube.com/watch?v=Fi8-phj1X1A>
+Which tool is described as a “must-have” skill for over 20 years?
 
-## Data Analysis
+a) Neural Networks
+b) Deep Fakes
+c) SQL (Structured Query Language)
+d) ChatGPT
 
-In this section, the `polls_us_election_2016` dataset from the **dslabs** package is analyzed using R.
+Answer: c) SQL
 
-```{r}
+:::
+
+:::
+
+::: {.card-box}
+
+AI Disclosure
+
+I used Gemini 3 Flash to:
+
+Summarize the interview transcript
+Format the questions
+Assist with clarity improvements in the write-up
+
+:::
+
+::: {.card-box}
+
+Video Link
+
+https://www.youtube.com/watch?v=Fi8-phj1X1A
+
+:::
+
+::: {.card-box}
+
+Data Analysis Section
+
+In this section, the polls_us_election_2016 dataset from the dslabs package is analyzed using R.
+
 library(dslabs)
 library(dplyr)
 
-# Load dataset
 data("polls_us_election_2016")
 data <- polls_us_election_2016
 
-# Personal variables
 my_first <- "Bora"
 my_birth_year <- 2004
 
-# Calculate k
 k <- (nchar(my_first) + my_birth_year) %% 15 + 8
 k
 
-# Display rows from original dataset
 if (k %% 2 == 0) {
   head(data, k)
 } else {
   tail(data, k)
 }
 
-# Total NA values
 sum(is.na(data))
 
-# NA values per column (top 8)
 na_per_column <- sort(colSums(is.na(data)), decreasing = TRUE)
 head(na_per_column, 8)
 
-# Replace NA values
 new_data <- data %>%
   mutate(
     across(where(is.numeric), ~ ifelse(is.na(.), my_birth_year + k, .)),
@@ -74,18 +227,21 @@ new_data <- data %>%
     })
   )
 
-# Display rows from new dataset
 if (k %% 2 == 0) {
   head(new_data, k)
 } else {
   tail(new_data, k)
 }
 
-# Remaining NA values
 sum(is.na(new_data))
-
-# anyNA check
 anyNA(new_data)
-```
 
--   I also utilized Gemini to debug and correct errors in my R code.
+I also used Gemini AI to debug and correct errors in my R code.
+
+:::
+
+<div class="footer">
+
+Made with 💚 using R and Quarto
+
+</div> ```

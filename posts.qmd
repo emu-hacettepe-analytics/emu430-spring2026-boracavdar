@@ -1,6 +1,149 @@
 ---
-title: "My Blog"
-sidebar: false 
+title: ""
+format:
+  html:
+    theme: minty
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    title-block-banner: false
+sidebar: false
 ---
 
-This page is under construction.
+```{=html}
+<style>
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background-color:#0b3d2e !important;
+  border-bottom:1px solid #14532d;
+}
+
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  color:#bbf7d0 !important;
+}
+
+/* ===== GENERAL ===== */
+
+body{
+  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
+  font-family:'Segoe UI', sans-serif;
+  color:#1f2937;
+}
+
+main.content{
+  padding-top:12px !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  background: linear-gradient(135deg,#14532d,#22c55e);
+  color:white;
+  padding:60px 40px;
+  border-radius:22px;
+  text-align:center;
+  margin-bottom:24px;
+  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+}
+
+.hero h1{
+  font-size:3rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.7;
+  opacity:0.96;
+}
+
+/* ===== CONTENT CARD ===== */
+
+.card-box{
+  background:white;
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
+  border:1px solid #dcfce7;
+  text-align:center;
+}
+
+/* ===== BLOG PLACEHOLDER ===== */
+
+.placeholder{
+  font-size:5rem;
+  margin-bottom:15px;
+}
+
+.coming-soon{
+  color:#166534;
+  font-size:1.6rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.description{
+  color:#4b5563;
+  max-width:650px;
+  margin:auto;
+  line-height:1.7;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  margin-top:28px;
+  padding:12px;
+  color:#166534;
+  font-size:0.95rem;
+}
+
+</style>
+
+::: {.hero}
+
+My Blog
+
+Thoughts, analytics, visualizations, and learning experiences.
+
+This section will include blog posts about data analytics, statistics, research projects, and personal development.
+
+:::
+
+::: {.card-box}
+
+<div class="placeholder"> 📝 </div> <div class="coming-soon"> Blog Section Under Construction </div> <div class="description">
+
+I am currently preparing content for this section.
+
+Future posts will include:
+
+Data Analytics Projects
+Statistical Insights
+Visualization Techniques
+Research Experiences
+Learning Notes & Reflections
+
+Stay tuned for upcoming articles.
+
+</div>
+
+:::
+
+<div class="footer">
+
+Made with 💚 using R and Quarto
+
+</div> ```

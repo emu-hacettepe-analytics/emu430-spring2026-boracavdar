@@ -1,27 +1,212 @@
 ---
-title: "About Me"
+title: ""
+format:
+  html:
+    theme: minty
+    toc: false
+    page-layout: full
+    smooth-scroll: true
+    title-block-banner: false
+sidebar: false
 ---
 
-## Professional Bio
+```{=html}
+<style>
 
-I am Yusuf Bora Çavdar, a 3rd-year Industrial Engineering student at Hacettepe University, expecting to graduate in 2026. My academic interests are centered around **Data Science** and **Data Analytics**. I am passionate about using data-driven insights to optimize processes and solve complex engineering problems.
+/* ===== NAVBAR ===== */
 
-I am particularly interested in exploring the intersections of data analytics within Human Resources, focusing on Training and Development. Additionally, I have a strong interest in Lean and Six Sigma methodologies.
+.navbar{
+  background-color:#0b3d2e !important;
+  border-bottom:1px solid #14532d;
+}
 
-## Interests and Activities
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-weight:600;
+}
 
-I actively participate in various student activities and personal development areas:
+.navbar a:hover{
+  color:#bbf7d0 !important;
+}
 
-\* **Financial Literacy Society:** I am an active member interested in financial management and economic analysis.
+/* ===== GENERAL ===== */
 
-\* **Scouting:** As an active member of the scouting community, I focus on leadership, teamwork, and outdoor skills.
+body{
+  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
+  font-family:'Segoe UI', sans-serif;
+  color:#1f2937;
+}
 
-\* **Language Learning:** I am currently dedicated to learning German to enhance my professional and international communication skills.
+main.content{
+  padding-top:12px !important;
+}
 
-## Curriculum Vitae
+/* ===== HERO ===== */
 
-You can find my detailed professional background and academic achievements in my CV.
+.hero{
+  background: linear-gradient(135deg,#14532d,#22c55e);
+  color:white;
+  padding:60px 40px;
+  border-radius:22px;
+  text-align:center;
+  margin-bottom:24px;
+  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+}
 
-[Click here to download my CV (PDF)](files/cv.pdf)
+.hero h1{
+  font-size:3rem;
+  font-weight:800;
+  margin-bottom:10px;
+}
 
+.hero p{
+  max-width:720px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.7;
+  opacity:0.96;
+}
 
+/* ===== CARDS ===== */
+
+.card-box{
+  background:white;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
+  border:1px solid #dcfce7;
+  margin-bottom:18px;
+  transition:0.25s ease;
+}
+
+.card-box:hover{
+  transform:translateY(-4px);
+  box-shadow:0px 8px 20px rgba(34,197,94,0.14);
+}
+
+.card-box h2{
+  color:#166534;
+  font-size:1.4rem;
+  margin-bottom:14px;
+}
+
+/* ===== TAGS ===== */
+
+.tag{
+  display:inline-block;
+  background:#dcfce7;
+  color:#166534;
+  padding:8px 14px;
+  border-radius:999px;
+  margin:5px;
+  font-size:0.92rem;
+  font-weight:600;
+}
+
+/* ===== BUTTON ===== */
+
+.cv-button{
+  display:inline-block;
+  background:#15803d;
+  color:white !important;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none !important;
+  font-weight:600;
+  transition:0.25s;
+  margin-top:10px;
+}
+
+.cv-button:hover{
+  background:#166534;
+  transform:translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  margin-top:28px;
+  padding:12px;
+  color:#166534;
+  font-size:0.95rem;
+}
+
+</style>
+
+::: {.hero}
+
+About Me
+
+Industrial Engineering Student • Data Analytics Enthusiast • Research-Oriented Thinker
+
+I am passionate about using data-driven insights to optimize processes, support decision-making, and solve complex engineering problems.
+
+:::
+
+::: {.card-box}
+
+Professional Bio
+
+I am Yusuf Bora Çavdar, a 3rd-year Industrial Engineering student at Hacettepe University, expected to graduate in 2026.
+
+My primary academic interests focus on:
+
+Data Science
+Data Analytics
+Process Optimization
+Statistical Analysis
+Decision Support Systems
+
+I am especially interested in the applications of analytics within Human Resources, particularly in Training and Development.
+
+Additionally, I have a strong interest in Lean and Six Sigma methodologies.
+
+:::
+
+::: {.card-box}
+
+Areas of Interest
+
+<span class="tag">Data Analytics</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Lean Six Sigma</span>
+<span class="tag">Statistical Modeling</span>
+<span class="tag">Human Resources Analytics</span>
+<span class="tag">Process Improvement</span>
+
+:::
+
+::: {.card-box}
+
+Activities & Personal Development
+📚 Financial Literacy Society
+
+Active member interested in financial management and economic analysis.
+
+🌲 Scouting
+
+Focused on leadership, teamwork, discipline, and outdoor skills through scouting activities.
+
+🇩🇪 Language Learning
+
+Currently learning German to improve international communication and professional opportunities.
+
+:::
+
+::: {.card-box}
+
+Curriculum Vitae
+
+You can find my detailed academic background, experiences, and achievements in my CV.
+
+<a href="files/cv.pdf" class="cv-button">Download CV (PDF)</a>
+
+:::
+
+<div class="footer">
+
+Made with 💚 using R and Quarto
+
+</div> ```
