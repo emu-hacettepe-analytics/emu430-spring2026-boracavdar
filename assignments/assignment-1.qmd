@@ -2,7 +2,7 @@
 title: ""
 format:
   html:
-    theme: minty
+    theme: cosmo
     toc: true
     toc-location: left
     page-layout: full
@@ -16,95 +16,155 @@ sidebar: false
 ```{=html}
 <style>
 
-/* ===== NAVBAR ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.navbar{
-  background-color:#0b3d2e !important;
-  border-bottom:1px solid #14532d;
-}
-
-.navbar-brand,
-.navbar a{
-  color:white !important;
-  font-weight:600;
-}
-
-.navbar a:hover{
-  color:#bbf7d0 !important;
-}
-
-/* ===== GENERAL ===== */
+/* ===== GLOBAL ===== */
 
 body{
-  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
-  font-family:'Segoe UI', sans-serif;
+  background:#f4f6f5;
+  font-family:'Inter', sans-serif;
   color:#1f2937;
 }
 
 main.content{
-  padding-top:12px !important;
+  max-width:1050px;
+  padding-top:8px !important;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background:#163a2d !important;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.navbar-brand,
+.navbar a{
+  color:#f9fafb !important;
+  font-weight:500;
+  font-size:0.95rem;
+  transition:0.2s ease;
+}
+
+.navbar a:hover{
+  color:#d1fae5 !important;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-  background: linear-gradient(135deg,#14532d,#22c55e);
+  background:#1f4d3a;
   color:white;
-  padding:55px 40px;
-  border-radius:22px;
-  text-align:center;
-  margin-bottom:24px;
-  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+  padding:80px 60px;
+  border-radius:18px;
+  margin-bottom:22px;
 }
 
 .hero h1{
-  font-size:2.8rem;
-  font-weight:800;
-  margin-bottom:10px;
+  font-size:3.3rem;
+  font-weight:700;
+  letter-spacing:-2px;
+  margin-bottom:14px;
 }
 
 .hero p{
-  max-width:750px;
-  margin:auto;
-  font-size:1.05rem;
-  line-height:1.7;
-  opacity:0.96;
+  max-width:760px;
+  font-size:1.02rem;
+  line-height:1.85;
+  color:rgba(255,255,255,0.88);
+  margin:0;
 }
 
 /* ===== CARDS ===== */
 
 .card-box{
   background:white;
-  border-radius:18px;
-  padding:26px;
-  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
-  border:1px solid #dcfce7;
+  border-radius:16px;
+  padding:30px;
+  border:1px solid #e5e7eb;
   margin-bottom:18px;
 }
 
 .card-box h2{
-  color:#166534;
-  margin-bottom:12px;
+  font-size:1.12rem;
+  font-weight:600;
+  color:#163a2d;
+  margin-bottom:16px;
 }
 
-/* ===== QUESTIONS ===== */
+.card-box p,
+.card-box li{
+  color:#4b5563;
+  line-height:1.8;
+}
+
+/* ===== QUESTION BOX ===== */
 
 .qa-box{
-  background:#f8fffa;
-  border:1px solid #dcfce7;
-  padding:18px;
+  background:#f8faf9;
+  border:1px solid #e5e7eb;
+  padding:22px;
   border-radius:14px;
-  margin-bottom:12px;
+  margin-bottom:14px;
+}
+
+.qa-box strong{
+  color:#163a2d;
+}
+
+/* ===== CODE BLOCK ===== */
+
+.cell{
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:10px;
+  background:#fbfcfb;
+}
+
+.code-fold-button{
+  background:#163a2d !important;
+  border:none !important;
+  border-radius:10px !important;
+  color:white !important;
+  font-size:0.9rem !important;
+}
+
+/* ===== LINK ===== */
+
+.custom-link{
+  color:#163a2d;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.custom-link:hover{
+  text-decoration:underline;
+}
+
+/* ===== TOC ===== */
+
+.sidebar nav[role=doc-toc] ul > li > a{
+  color:#374151;
+  font-size:0.92rem;
+}
+
+.sidebar nav[role=doc-toc] ul > li > a:hover{
+  color:#163a2d;
 }
 
 /* ===== FOOTER ===== */
 
 .footer{
+  margin-top:34px;
   text-align:center;
-  margin-top:28px;
+  color:#6b7280;
+  font-size:0.9rem;
   padding:12px;
-  color:#166534;
-  font-size:0.95rem;
+}
+
+.footer strong{
+  color:#163a2d;
+  font-weight:600;
 }
 
 </style>
@@ -121,17 +181,17 @@ Industrial Engineering and Data Science integration based on Cem Vardar’s inte
 
 ::: {.card-box}
 
-Summary: Industrial Engineering and Data Science
+Summary
 
 I watched the interview with Cem Vardar, who holds a PhD from Arizona State University and has worked at companies such as Intel and Carvana.
 
-The main idea of the interview is the strong relationship between Industrial Engineering (IE) and Data Science in real-world applications.
+The interview mainly focuses on the relationship between Industrial Engineering and Data Science in real-world applications.
 
-He explains that Industrial Engineering focuses on solving problems in complex systems, while Data Science should be seen as a tool for solving business problems, rather than a separate career path.
+According to Vardar, Industrial Engineering is fundamentally about solving problems within complex systems, while Data Science should be viewed as a practical tool for business problem-solving rather than a standalone profession.
 
-A key concept he introduces is “Evolutionary Design”, which emphasizes improving systems gradually through small, data-driven changes instead of completely replacing them at once.
+One of the most important concepts mentioned in the interview is “Evolutionary Design,” which emphasizes improving systems gradually through small, data-driven changes instead of replacing entire systems at once.
 
-He also highlights that foundational tools like SQL and Excel remain essential, even as technology evolves rapidly.
+He also highlights that foundational tools such as SQL and Excel remain highly valuable despite rapid technological changes.
 
 :::
 
@@ -143,10 +203,13 @@ Questions
 
 1. Open-Ended Question
 
-What is Cem Vardar's "Evolutionary Design" approach, and why does he suggest it instead of replacing an entire system?
+What is Cem Vardar's “Evolutionary Design” approach, and why does he suggest it instead of replacing an entire system?
 
-Answer:
-It refers to improving systems step-by-step using small, incremental changes. This approach is preferred because full system replacements are risky, complex, and often fail in real business environments, while gradual improvements are more reliable.
+<br>
+
+Answer
+
+It refers to improving systems incrementally through small and manageable changes. This approach is preferred because complete system replacements are often expensive, risky, and difficult to implement successfully in real business environments.
 
 :::
 
@@ -160,8 +223,11 @@ a) Neural Networks
 b) Deep Fakes
 c) SQL (Structured Query Language)
 d) ChatGPT
+<br>
 
-Answer: c) SQL
+Answer
+
+c) SQL
 
 :::
 
@@ -173,17 +239,20 @@ AI Disclosure
 
 I used Gemini 3 Flash to:
 
-Summarize the interview transcript
-Format the questions
-Assist with clarity improvements in the write-up
+<ul> <li>Summarize the interview transcript</li> <li>Format the questions</li> <li>Improve clarity and readability</li> </ul>
+
+I also used Gemini AI to debug and correct errors in my R code.
 
 :::
 
 ::: {.card-box}
 
 Video Link
+<a href="https://www.youtube.com/watch?v=Fi8-phj1X1A" class="custom-link">
 
-https://www.youtube.com/watch?v=Fi8-phj1X1A
+Watch the Interview on YouTube
+
+</a>
 
 :::
 
@@ -236,12 +305,10 @@ if (k %% 2 == 0) {
 sum(is.na(new_data))
 anyNA(new_data)
 
-I also used Gemini AI to debug and correct errors in my R code.
-
 :::
 
 <div class="footer">
 
-Made with 💚 using R and Quarto
+Built with <strong>R</strong> and <strong>Quarto</strong>
 
 </div> ```

@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-73da95f1134fd7e133c602a1278d5084.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b77ad8b8fd8f04bd21044df5c5bf7d25.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -146,104 +146,131 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 
-/* ===== NAVBAR ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.navbar{
-  background-color:#0b3d2e !important;
-  border-bottom:1px solid #14532d;
-}
-
-.navbar-brand,
-.navbar a{
-  color:white !important;
-  font-weight:600;
-}
-
-.navbar a:hover{
-  color:#bbf7d0 !important;
-}
-
-/* ===== GENERAL ===== */
+/* ===== GLOBAL ===== */
 
 body{
-  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
-  font-family:'Segoe UI', sans-serif;
+  background:#f4f6f5;
+  font-family:'Inter', sans-serif;
   color:#1f2937;
 }
 
 main.content{
-  padding-top:12px !important;
+  max-width:1050px;
+  padding-top:8px !important;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background:#163a2d !important;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.navbar-brand,
+.navbar a{
+  color:#f9fafb !important;
+  font-weight:500;
+  font-size:0.95rem;
+  transition:0.2s ease;
+}
+
+.navbar a:hover{
+  color:#d1fae5 !important;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-  background: linear-gradient(135deg,#14532d,#22c55e);
+  background:#1f4d3a;
   color:white;
-  padding:60px 40px;
-  border-radius:22px;
-  text-align:center;
-  margin-bottom:24px;
-  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+  padding:80px 60px;
+  border-radius:18px;
+  margin-bottom:22px;
 }
 
 .hero h1{
-  font-size:3rem;
-  font-weight:800;
-  margin-bottom:10px;
+  font-size:3.5rem;
+  font-weight:700;
+  letter-spacing:-2px;
+  margin-bottom:16px;
 }
 
 .hero p{
   max-width:720px;
-  margin:auto;
-  font-size:1.05rem;
-  line-height:1.7;
-  opacity:0.96;
+  font-size:1.02rem;
+  line-height:1.85;
+  color:rgba(255,255,255,0.88);
+  margin:0;
 }
 
 /* ===== CARDS ===== */
 
 .card-box{
   background:white;
-  border-radius:18px;
-  padding:26px;
-  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
-  border:1px solid #dcfce7;
+  border-radius:16px;
+  padding:30px;
+  border:1px solid #e5e7eb;
   margin-bottom:18px;
-  transition:0.25s ease;
-}
-
-.card-box:hover{
-  transform:translateY(-4px);
-  box-shadow:0px 8px 20px rgba(34,197,94,0.14);
 }
 
 .card-box h2{
-  color:#166534;
-  margin-bottom:12px;
+  font-size:1.1rem;
+  font-weight:600;
+  color:#163a2d;
+  margin-bottom:16px;
 }
 
-/* ===== INFO TAGS ===== */
+.card-box p,
+.card-box li{
+  color:#4b5563;
+  line-height:1.8;
+}
+
+.card-box ul{
+  padding-left:20px;
+  margin-bottom:0;
+}
+
+/* ===== TAGS ===== */
 
 .tag{
   display:inline-block;
-  background:#dcfce7;
-  color:#166534;
+  background:#edf2ef;
+  color:#163a2d;
   padding:8px 14px;
   border-radius:999px;
-  margin:5px;
+  margin:5px 6px 5px 0;
+  font-size:0.88rem;
+  font-weight:500;
+  border:1px solid #dde5e0;
+}
+
+/* ===== TOC ===== */
+
+.sidebar nav[role=doc-toc] ul > li > a{
+  color:#374151;
   font-size:0.92rem;
-  font-weight:600;
+}
+
+.sidebar nav[role=doc-toc] ul > li > a:hover{
+  color:#163a2d;
 }
 
 /* ===== FOOTER ===== */
 
 .footer{
+  margin-top:34px;
   text-align:center;
-  margin-top:28px;
+  color:#6b7280;
+  font-size:0.9rem;
   padding:12px;
-  color:#166534;
-  font-size:0.95rem;
+}
+
+.footer strong{
+  color:#163a2d;
+  font-weight:600;
 }
 
 </style>
@@ -255,7 +282,7 @@ main.content{
 <div class="card-box">
 <p>Course Information</p>
 <p>Course: EMU430 – Data Analytics Term: Spring 2026</p>
-<p>This page showcases my assignments, analytical approaches, and project outcomes developed during the course.</p>
+<p>This page showcases assignments, analytical approaches, and project outcomes developed during the course.</p>
 <p>Please use the navigation menu to explore individual assignments and related works.</p>
 </div>
 <div class="card-box">
@@ -266,7 +293,23 @@ main.content{
 <p>About These Assignments</p>
 <p>The assignments focus on applying analytical thinking and data-driven methodologies to real-world datasets.</p>
 <p>Each project includes:</p>
-<p>Data preprocessing and preparation Exploratory analysis Statistical interpretation Visualization techniques Analytical reporting</p>
+<ul>
+<li>
+Data preprocessing and preparation
+</li>
+<li>
+Exploratory analysis
+</li>
+<li>
+Statistical interpretation
+</li>
+<li>
+Visualization techniques
+</li>
+<li>
+Analytical reporting
+</li>
+</ul>
 <p>The goal is to improve both technical and presentation skills in data analytics.</p>
 </div>
 <div class="card-box">
@@ -275,7 +318,7 @@ main.content{
 <p>More assignments and analytical reports will be added throughout the semester.</p>
 </div>
 <div class="footer">
-<p>Made with 💚 using R and Quarto</p>
+<p>Built with <strong>R</strong> and <strong>Quarto</strong></p>
 </div>
 <p>```</p>
 

@@ -2,7 +2,7 @@
 title: ""
 format:
   html:
-    theme: minty
+    theme: cosmo
     toc: false
     page-layout: full
     smooth-scroll: true
@@ -13,124 +13,154 @@ sidebar: false
 ```{=html}
 <style>
 
-/* ===== NAVBAR ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.navbar{
-  background-color:#0b3d2e !important;
-  border-bottom:1px solid #14532d;
-}
-
-.navbar-brand,
-.navbar a{
-  color:white !important;
-  font-weight:600;
-}
-
-.navbar a:hover{
-  color:#bbf7d0 !important;
-}
-
-/* ===== GENERAL ===== */
+/* ===== GLOBAL ===== */
 
 body{
-  background: linear-gradient(to bottom right, #eefbf3, #dff5e7);
-  font-family:'Segoe UI', sans-serif;
+  background:#f4f6f5;
+  font-family:'Inter', sans-serif;
   color:#1f2937;
 }
 
 main.content{
-  padding-top:12px !important;
+  max-width:1050px;
+  padding-top:8px !important;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  background:#163a2d !important;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.navbar-brand,
+.navbar a{
+  color:#f9fafb !important;
+  font-weight:500;
+  font-size:0.95rem;
+  transition:0.2s ease;
+}
+
+.navbar a:hover{
+  color:#d1fae5 !important;
 }
 
 /* ===== HERO ===== */
 
 .hero{
-  background: linear-gradient(135deg,#14532d,#22c55e);
+  background:#1f4d3a;
   color:white;
-  padding:60px 40px;
-  border-radius:22px;
-  text-align:center;
-  margin-bottom:24px;
-  box-shadow:0px 8px 28px rgba(0,0,0,0.12);
+  padding:80px 60px;
+  border-radius:18px;
+  margin-bottom:22px;
 }
 
 .hero h1{
-  font-size:3rem;
-  font-weight:800;
-  margin-bottom:10px;
+  font-size:3.5rem;
+  font-weight:700;
+  letter-spacing:-2px;
+  margin-bottom:14px;
 }
 
 .hero p{
-  max-width:720px;
-  margin:auto;
-  font-size:1.05rem;
-  line-height:1.7;
-  opacity:0.96;
+  max-width:760px;
+  font-size:1.02rem;
+  line-height:1.85;
+  color:rgba(255,255,255,0.88);
+  margin:0;
 }
 
 /* ===== CARDS ===== */
 
 .card-box{
   background:white;
-  border-radius:18px;
-  padding:24px;
-  box-shadow:0px 4px 16px rgba(0,0,0,0.06);
-  border:1px solid #dcfce7;
+  border-radius:16px;
+  padding:30px;
+  border:1px solid #e5e7eb;
   margin-bottom:18px;
-  transition:0.25s ease;
-}
-
-.card-box:hover{
-  transform:translateY(-4px);
-  box-shadow:0px 8px 20px rgba(34,197,94,0.14);
 }
 
 .card-box h2{
-  color:#166534;
-  font-size:1.4rem;
-  margin-bottom:14px;
+  font-size:1.12rem;
+  font-weight:600;
+  color:#163a2d;
+  margin-bottom:16px;
+}
+
+.card-box p,
+.card-box li{
+  color:#4b5563;
+  line-height:1.8;
+}
+
+.card-box ul{
+  padding-left:20px;
+  margin-bottom:0;
 }
 
 /* ===== TAGS ===== */
 
 .tag{
   display:inline-block;
-  background:#dcfce7;
-  color:#166534;
+  background:#edf2ef;
+  color:#163a2d;
   padding:8px 14px;
   border-radius:999px;
-  margin:5px;
-  font-size:0.92rem;
-  font-weight:600;
+  margin:5px 6px 5px 0;
+  font-size:0.88rem;
+  font-weight:500;
+  border:1px solid #dde5e0;
 }
 
-/* ===== BUTTON ===== */
+/* ===== CV BUTTON ===== */
 
 .cv-button{
   display:inline-block;
-  background:#15803d;
+  background:#163a2d;
   color:white !important;
   padding:12px 22px;
   border-radius:12px;
   text-decoration:none !important;
-  font-weight:600;
-  transition:0.25s;
+  font-weight:500;
+  transition:0.2s ease;
   margin-top:10px;
 }
 
 .cv-button:hover{
-  background:#166534;
-  transform:translateY(-2px);
+  background:#1f4d3a;
+}
+
+/* ===== SECTION ITEMS ===== */
+
+.info-item{
+  margin-bottom:22px;
+}
+
+.info-item:last-child{
+  margin-bottom:0;
+}
+
+.info-title{
+  font-weight:600;
+  color:#163a2d;
+  margin-bottom:6px;
 }
 
 /* ===== FOOTER ===== */
 
 .footer{
+  margin-top:34px;
   text-align:center;
-  margin-top:28px;
+  color:#6b7280;
+  font-size:0.9rem;
   padding:12px;
-  color:#166534;
-  font-size:0.95rem;
+}
+
+.footer strong{
+  color:#163a2d;
+  font-weight:600;
 }
 
 </style>
@@ -141,7 +171,7 @@ About Me
 
 Industrial Engineering Student • Data Analytics Enthusiast • Research-Oriented Thinker
 
-I am passionate about using data-driven insights to optimize processes, support decision-making, and solve complex engineering problems.
+<p> I am passionate about using data-driven insights to optimize processes, support decision-making, and solve complex engineering problems. </p>
 
 :::
 
@@ -149,17 +179,13 @@ I am passionate about using data-driven insights to optimize processes, support 
 
 Professional Bio
 
-I am Yusuf Bora Çavdar, a 3rd-year Industrial Engineering student at Hacettepe University, expected to graduate in 2026.
+I am Yusuf Bora Çavdar, a third-year Industrial Engineering student at Hacettepe University, expected to graduate in 2026.
 
-My primary academic interests focus on:
+My primary academic interests include:
 
-Data Science
-Data Analytics
-Process Optimization
-Statistical Analysis
-Decision Support Systems
+<ul> <li>Data Science</li> <li>Data Analytics</li> <li>Process Optimization</li> <li>Statistical Analysis</li> <li>Decision Support Systems</li> </ul>
 
-I am especially interested in the applications of analytics within Human Resources, particularly in Training and Development.
+I am particularly interested in the applications of analytics within Human Resources, especially in Training and Development.
 
 Additionally, I have a strong interest in Lean and Six Sigma methodologies.
 
@@ -181,17 +207,31 @@ Areas of Interest
 ::: {.card-box}
 
 Activities & Personal Development
-📚 Financial Literacy Society
+<div class="info-item"> <div class="info-title">
+
+Financial Literacy Society
+
+</div>
 
 Active member interested in financial management and economic analysis.
 
-🌲 Scouting
+</div> <div class="info-item"> <div class="info-title">
+
+Scouting
+
+</div>
 
 Focused on leadership, teamwork, discipline, and outdoor skills through scouting activities.
 
-🇩🇪 Language Learning
+</div> <div class="info-item"> <div class="info-title">
+
+Language Learning
+
+</div>
 
 Currently learning German to improve international communication and professional opportunities.
+
+</div>
 
 :::
 
@@ -201,12 +241,16 @@ Curriculum Vitae
 
 You can find my detailed academic background, experiences, and achievements in my CV.
 
-<a href="files/cv.pdf" class="cv-button">Download CV (PDF)</a>
+<a href="files/cv.pdf" class="cv-button">
+
+Download CV (PDF)
+
+</a>
 
 :::
 
 <div class="footer">
 
-Made with 💚 using R and Quarto
+Built with <strong>R</strong> and <strong>Quarto</strong>
 
 </div> ```
