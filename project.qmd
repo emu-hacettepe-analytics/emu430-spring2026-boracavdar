@@ -1,44 +1,213 @@
 ---
-title: "Our Course Project"
-sidebar: false 
+title: ""
+sidebar: false
+page-layout: full
 ---
 
-# Project Phase 1: Initialization
+<style>
 
-## Project Title
+/* Hide Default Quarto Header */
+#title-block-header {
+  display: none;
+}
 
-**Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach**
+/* Hero Section */
+.hero-container {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
 
-## Team Member
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
 
--   **Yusuf Bora Çavdar**
+.hero-content h2 {
+  font-size: 1.8rem;
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+}
 
--   Onur Furkan Gök
+.hero-content p {
+  max-width: 760px;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #64748b;
+}
 
-## Project Objective
+/* Glass Cards */
+.glass-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(14px);
 
-The primary objective of this project is to develop a **Decision Support Model** to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a **"Seismic Vulnerability Index."** This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety.
+  border: 1px solid rgba(255,255,255,0.2);
 
-## Data Set Description
+  border-radius: 30px;
 
-The analysis will be grounded on three primary datasets sourced from the **IBB Open Data Portal** and **TUIK**:
+  padding: 3rem;
 
-1.  **Building Inventory Dataset:** Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.
+  margin-bottom: 2rem;
 
-2.  **Urban Transformation Requirement Data:** Provides official records of buildings identified as "In Need of Transformation" vs. "Not in Need" across districts.
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05);
 
-3.  **Municipal Population Dataset (2019-2024):** A time-series dataset showing population distribution and density across Istanbul's 39 districts.
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
 
-## Preliminary Plan
+.glass-card:hover {
 
-The project will follow a structured Data Science workflow:
+  transform: translateY(-6px);
 
--   **Data Preprocessing:** Cleaning and merging the datasets using `dplyr` and `tidyr`. Handling "Wide" to "Long" format conversions for population trends.
+  box-shadow:
+    0 20px 45px rgba(15,23,42,0.08);
+}
 
--   **Exploratory Data Analysis (EDA):** Visualizing the distribution of aged buildings and population hotspots using `ggplot2`.
+/* Typography */
 
--   **Index Calculation:** Implementing a weighted risk formula to score each neighborhood/district:
+.glass-card h2 {
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
 
-    RiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)
+.glass-card p,
+.glass-card li {
+  color: #475569;
+  line-height: 1.9;
+}
 
--   **Final Output:** A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul.
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th {
+  background: #f8fafc;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 1rem;
+  border-top:
+    1px solid rgba(15,23,42,0.06);
+}
+
+</style>
+
+<div class="hero-container">
+
+<div class="hero-content">
+
+# Project Phase 1
+
+## Decoding Higher Education
+
+<p>
+A Trend Analysis of Industrial Engineering Programs in Turkey
+</p>
+
+</div>
+
+</div>
+
+<div class="glass-card">
+
+## Project Overview
+
+This project investigates the structural and institutional factors shaping the success of Industrial Engineering departments across Turkey between 2018 and 2025.
+
+Rather than treating placement statistics as isolated yearly figures, we aim to construct an integrated analytical framework capable of identifying the underlying drivers of academic prestige, student demand, and regional competitiveness.
+
+</div>
+
+<div class="glass-card">
+
+## Problem Statement & Motivation
+
+While university placement statistics are publicly available, there is often a lack of analytical perspective explaining why certain departments consistently outperform others in national rankings.
+
+As Industrial Engineering students, our objective is to apply modern data analytics methodologies directly to our own academic domain.
+
+We aim to identify the underlying drivers of success and regional demand for Industrial Engineering departments across Turkey over recent years.
+
+</div>
+
+<div class="glass-card">
+
+## Data Strategy & Sources
+
+### Primary Source
+- **YÖK Atlas – Lisans Atlası**
+
+### Extraction Tool
+- **thestats R Package**  
+Developed by *M. Çavuş* and *O. Aydın*
+
+### Core Variables
+- National base rankings
+- Program quotas
+- Demand ratios
+- Faculty indicators
+- Erasmus mobility
+- Student regional origins
+
+### Temporal Coverage
+- **2018 – 2025**
+
+</div>
+
+<div class="glass-card">
+
+## Proposed Methodology
+
+The analysis is implemented using R (`thestats`, `tidyverse`, `ggplot2`) and reported through Quarto for full reproducibility.
+
+### Analytical Workflow
+
+- Data extraction and harmonization
+- Missing value handling and preprocessing
+- Exploratory Data Analysis (EDA)
+- Trend analysis and sector benchmarking
+- Correlation modeling
+- Interactive visualization and reporting
+
+</div>
+
+<div class="glass-card">
+
+## Preliminary Timeline
+
+| Phase | Planned Activities |
+|---|---|
+| **Weeks 1–2** | Data extraction, cleaning, preprocessing |
+| **Weeks 3–4** | EDA, trend analysis, correlation modeling |
+| **Week 5** | Final reporting, visualization refinement, presentation |
+
+</div>
+
+<div class="glass-card">
+
+## Research Contributors
+
+### Yusuf Bora Çavdar  
+Data Engineering · Visualization · Statistical Analysis  
+
+Portfolio:  
+https://emu-hacettepe-analytics.github.io/emu430-spring2026-boracavdar/
+
+<br>
+
+### Onur Furkan Gök  
+Research Design · Data Processing · Methodological Development  
+
+Portfolio:  
+https://emu-hacettepe-analytics.github.io/emu430-spring2026-onurfgg/
+
+</div>

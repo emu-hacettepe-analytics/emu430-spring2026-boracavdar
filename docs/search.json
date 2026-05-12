@@ -2,9 +2,9 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "Our Course Project",
+    "title": "Project Phase 1",
     "section": "",
-    "text": "Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach\n\n\n\n\nYusuf Bora Çavdar\nOnur Furkan Gök\n\n\n\n\nThe primary objective of this project is to develop a Decision Support Model to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a “Seismic Vulnerability Index.” This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety.\n\n\n\nThe analysis will be grounded on three primary datasets sourced from the IBB Open Data Portal and TUIK:\n\nBuilding Inventory Dataset: Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.\nUrban Transformation Requirement Data: Provides official records of buildings identified as “In Need of Transformation” vs. “Not in Need” across districts.\nMunicipal Population Dataset (2019-2024): A time-series dataset showing population distribution and density across Istanbul’s 39 districts.\n\n\n\n\nThe project will follow a structured Data Science workflow:\n\nData Preprocessing: Cleaning and merging the datasets using dplyr and tidyr. Handling “Wide” to “Long” format conversions for population trends.\nExploratory Data Analysis (EDA): Visualizing the distribution of aged buildings and population hotspots using ggplot2.\nIndex Calculation: Implementing a weighted risk formula to score each neighborhood/district:\nRiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)\nFinal Output: A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul."
+    "text": "A Trend Analysis of Industrial Engineering Programs in Turkey"
   },
   {
     "objectID": "project.html#project-title",
@@ -44,9 +44,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Yusuf Bora Çavdar's Analytics Lab",
+    "title": "Decoding Higher Education",
     "section": "",
-    "text": "Yusuf Bora Çavdar\n\nData Analytics • Machine Learning • Visualization\n\n\nI explore data, develop analytical systems, and create visual narratives using modern data science tools. This website presents my projects, research, and analytical work developed with R and Quarto.\n\n\n\n\n\nAbout Data Analytics Statistical Modeling Data Visualization Reproducible Research Machine Learning\nI focus on transforming complex datasets into clear and meaningful insights.\n\n\n\nCurrent Focus Higher Education Analytics Interactive Dashboards Statistical Exploration Visualization Systems Research Projects\nCurrently improving analytical storytelling and presentation design.\n\n\n\n\n\n\n\n\n\n10+\n\nProjects\n\n\n\n\nR\n\nMain Tool\n\n\n\n\nData\n\nDriven Thinking\n\n\n\n\n\n\n\n\n\n\nVisualization\nCreating clean and modern analytical visualizations with R and ggplot2.\n\n\n\nStatistical Analysis\nExploring trends, relationships, and patterns hidden inside data.\n\n\n\nMachine Learning\nBuilding predictive models and analytical workflows for real-world datasets.\n\n\n\n\nBuilt with R and Quarto\n\n```\n\n\n\n Back to top"
+    "text": "EMU430 • PROJECT PHASE 1\n\n\nDecoding Higher Education\n\nA Trend Analysis of Industrial Engineering Programs in Turkey\n\n\n\n\n\n\n\nProject Objective\nThis project investigates Industrial Engineering departments in Turkey (2018–2025).\nWe analyze how academic capacity, region, demand, and mobility affect success.\n\n\n\n\nProblem Statement\nUniversity ranking data exists, but explanations are limited.\nThis project focuses on why some departments perform better over time.\n\n\n\n\n\n\n\n\n\n\n\n2018–2025\n\n\nTime Span\n\n\n\n\n\n\nR\n\n\nMain Tool\n\n\n\n\n\n\nQuarto\n\n\nReporting\n\n\n\n\n\n\n\n\n\n\n\nData Strategy\n\nYÖK Atlas\nR datasets\nMulti-year IE data\nMobility indicators\n\n\n\n\n\nMethodology\n\nData cleaning\nEDA\nCorrelation analysis\nVisualization\nReporting in Quarto\n\n\n\n\n\n\n\n\n\nTimeline\n\n\n\nPhase\nWork\n\n\n\n\n1–2\nData preparation\n\n\n3–4\nAnalysis\n\n\n5\nReporting\n\n\n\n\n\n\n\n\n\nContributors\nYusuf Bora Çavdar\nData analysis & visualization\nOnur Furkan Gök\nResearch & methodology\n\n\nBuilt with R and Quarto\n\n\n\n\n Back to top"
   },
   {
     "objectID": "assignments/assignment-2.html",
@@ -66,27 +66,6 @@
     "text": "About Me\nIndustrial Engineering Student • Data Analytics Enthusiast • Research-Oriented Thinker\n\nI am passionate about using data-driven insights to optimize processes, support decision-making, and solve complex engineering problems.\n\n\n\nProfessional Bio\nI am Yusuf Bora Çavdar, a third-year Industrial Engineering student at Hacettepe University, expected to graduate in 2026.\nMy primary academic interests include:\n\n\nData Science\n\n\nData Analytics\n\n\nProcess Optimization\n\n\nStatistical Analysis\n\n\nDecision Support Systems\n\n\nI am particularly interested in the applications of analytics within Human Resources, especially in Training and Development.\nAdditionally, I have a strong interest in Lean and Six Sigma methodologies.\n\n\nAreas of Interest\nData Analytics Machine Learning Lean Six Sigma Statistical Modeling Human Resources Analytics Process Improvement\n\n\nActivities & Personal Development\n\n\nFinancial Literacy Society\n\nActive member interested in financial management and economic analysis.\n\n\n\nScouting\n\nFocused on leadership, teamwork, discipline, and outdoor skills through scouting activities.\n\n\n\nLanguage Learning\n\nCurrently learning German to improve international communication and professional opportunities.\n\n\n\nCurriculum Vitae\nYou can find my detailed academic background, experiences, and achievements in my CV.\n\nDownload CV (PDF)\n\n\n\nBuilt with R and Quarto\n\n```\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html#professional-bio",
-    "href": "about.html#professional-bio",
-    "title": "About Me",
-    "section": "",
-    "text": "I am Yusuf Bora Çavdar, a 3rd-year Industrial Engineering student at Hacettepe University, expecting to graduate in 2026. My academic interests are centered around Data Science and Data Analytics. I am passionate about using data-driven insights to optimize processes and solve complex engineering problems.\nI am particularly interested in exploring the intersections of data analytics within Human Resources, focusing on Training and Development. Additionally, I have a strong interest in Lean and Six Sigma methodologies."
-  },
-  {
-    "objectID": "about.html#interests-and-activities",
-    "href": "about.html#interests-and-activities",
-    "title": "About Me",
-    "section": "Interests and Activities",
-    "text": "Interests and Activities\nI actively participate in various student activities and personal development areas:\n* Financial Literacy Society: I am an active member interested in financial management and economic analysis.\n* Scouting: As an active member of the scouting community, I focus on leadership, teamwork, and outdoor skills.\n* Language Learning: I am currently dedicated to learning German to enhance my professional and international communication skills."
-  },
-  {
-    "objectID": "about.html#curriculum-vitae",
-    "href": "about.html#curriculum-vitae",
-    "title": "About Me",
-    "section": "Curriculum Vitae",
-    "text": "Curriculum Vitae\nYou can find my detailed professional background and academic achievements in my CV.\nClick here to download my CV (PDF)"
-  },
-  {
     "objectID": "assignments/assignment-1.html",
     "href": "assignments/assignment-1.html",
     "title": "Yusuf Bora Çavdar's Analytics Lab",
@@ -94,16 +73,6 @@
     "text": "Assignment 1 – Task 3\nVideo Summary & Data Analysis\nIndustrial Engineering and Data Science integration based on Cem Vardar’s interview.\n\n\nSummary\nI watched the interview with Cem Vardar, who holds a PhD from Arizona State University and has worked at companies such as Intel and Carvana.\nThe interview mainly focuses on the relationship between Industrial Engineering and Data Science in real-world applications.\nAccording to Vardar, Industrial Engineering is fundamentally about solving problems within complex systems, while Data Science should be viewed as a practical tool for business problem-solving rather than a standalone profession.\nOne of the most important concepts mentioned in the interview is “Evolutionary Design,” which emphasizes improving systems gradually through small, data-driven changes instead of replacing entire systems at once.\nHe also highlights that foundational tools such as SQL and Excel remain highly valuable despite rapid technological changes.\n\n\nQuestions\n\n\nOpen-Ended Question\n\nWhat is Cem Vardar’s “Evolutionary Design” approach, and why does he suggest it instead of replacing an entire system?\n\nAnswer\nIt refers to improving systems incrementally through small and manageable changes. This approach is preferred because complete system replacements are often expensive, risky, and difficult to implement successfully in real business environments.\n\n\n\nMultiple-Choice Question\n\nWhich tool is described as a “must-have” skill for over 20 years?\n\nNeural Networks\nDeep Fakes\nSQL (Structured Query Language)\nChatGPT \n\nAnswer\n\nSQL\n\n\n\n\nAI Disclosure\nI used Gemini 3 Flash to:\n\n\nSummarize the interview transcript\n\n\nFormat the questions\n\n\nImprove clarity and readability\n\n\nI also used Gemini AI to debug and correct errors in my R code.\n\n\nVideo Link \nWatch the Interview on YouTube\n\n\n\nData Analysis Section\nIn this section, the polls_us_election_2016 dataset from the dslabs package is analyzed using R.\nlibrary(dslabs) library(dplyr)\ndata(“polls_us_election_2016”) data &lt;- polls_us_election_2016\nmy_first &lt;- “Bora” my_birth_year &lt;- 2004\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8 k\nif (k %% 2 == 0) { head(data, k) } else { tail(data, k) }\nsum(is.na(data))\nna_per_column &lt;- sort(colSums(is.na(data)), decreasing = TRUE) head(na_per_column, 8)\nnew_data &lt;- data %&gt;% mutate( across(where(is.numeric), ~ ifelse(is.na(.), my_birth_year + k, .)), across(where(is.character), ~ ifelse(is.na(.), paste0(my_first, “”, k), .)), across(where(is.factor), ~ { x &lt;- as.character(.) x[is.na(x)] &lt;- paste0(my_first, ””, k) x }) )\nif (k %% 2 == 0) { head(new_data, k) } else { tail(new_data, k) }\nsum(is.na(new_data)) anyNA(new_data)\n\n\nBuilt with R and Quarto\n\n```\n\n\n\n Back to top",
     "crumbs": [
       "assignment-1.html"
-    ]
-  },
-  {
-    "objectID": "assignments/assignment-1.html#data-analysis",
-    "href": "assignments/assignment-1.html#data-analysis",
-    "title": "Assignment 1",
-    "section": "Data Analysis",
-    "text": "Data Analysis\nIn this section, the polls_us_election_2016 dataset from the dslabs package is analyzed using R.\n\nlibrary(dslabs)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n# Load dataset\ndata(\"polls_us_election_2016\")\ndata &lt;- polls_us_election_2016\n\n# Personal variables\nmy_first &lt;- \"Bora\"\nmy_birth_year &lt;- 2004\n\n# Calculate k\nk &lt;- (nchar(my_first) + my_birth_year) %% 15 + 8\nk\n\n[1] 21\n\n# Display rows from original dataset\nif (k %% 2 == 0) {\n  head(data, k)\n} else {\n  tail(data, k)\n}\n\n              state  startdate    enddate                pollster grade\n4188 South Carolina 2016-09-23 2016-10-06                   Ipsos    A-\n4189           Utah 2016-10-25 2016-10-31 Google Consumer Surveys     B\n4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+\n4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-\n4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-\n4193       New York 2016-02-28 2016-03-03           Siena College     A\n4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-\n4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A\n4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+\n4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-\n4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-\n4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-\n4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-\n4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+\n4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-\n4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-\n4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-\n4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A\n4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B\n4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-\n4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-\n     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson\n4188        258         lv           46.67         48.25              NA\n4189        245         lv           28.18         29.39            8.40\n4190       1036          v           50.00         36.00              NA\n4191        975         rv           42.00         36.00            7.00\n4192        971         rv           38.00         36.00            8.00\n4193        800         rv           57.00         34.00              NA\n4194        507         lv           46.00         43.00            7.00\n4195       1250         lv           43.00         45.00              NA\n4196        928          v           41.00         43.00            3.00\n4197        336         lv           39.38         53.08              NA\n4198       1056         lv           43.00         43.00            7.00\n4199        950         rv           39.00         36.00            9.00\n4200        955         rv           36.00         37.00            7.00\n4201        843          v           44.00         42.00              NA\n4202        170         lv           28.45         47.20              NA\n4203        538         lv           46.71         38.33              NA\n4204        452         lv           46.54         40.04              NA\n4205        683         lv           47.00         34.00            9.00\n4206        286         lv           21.33         35.05            9.99\n4207        446         lv           46.46         37.41              NA\n4208        600         lv           43.00         41.00              NA\n     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson\n4188               NA        46.20387      49.13322              NA\n4189               NA        33.61454      36.01090        7.458243\n4190               NA        47.81869      35.91267              NA\n4191               NA        46.44439      41.33270        2.791570\n4192               NA        42.46502      41.36491        3.791570\n4193               NA        56.98850      38.83402              NA\n4194               NA        47.79437      44.86935        4.022323\n4195               NA        39.90517      44.40152              NA\n4196               NA        43.28262      47.12021       -0.036293\n4197               NA        38.34430      54.36357              NA\n4198               NA        45.19351      46.65680        3.448447\n4199               NA        43.35339      41.19061        4.791570\n4200               NA        40.73937      42.33380        2.936299\n4201               NA        42.13165      43.55006              NA\n4202               NA        26.57791      45.43384              NA\n4203               NA        45.56387      38.22545              NA\n4204               NA        46.47852      40.48017              NA\n4205               NA        48.74781      39.07778        4.705020\n4206               NA        26.65200      40.57738        9.705791\n4207               NA        45.12949      37.10720              NA\n4208               NA        42.14966      42.05508              NA\n     adjpoll_mcmullin\n4188               NA\n4189               NA\n4190               NA\n4191               NA\n4192               NA\n4193               NA\n4194               NA\n4195               NA\n4196               NA\n4197               NA\n4198               NA\n4199               NA\n4200               NA\n4201               NA\n4202               NA\n4203               NA\n4204               NA\n4205               NA\n4206               NA\n4207               NA\n4208               NA\n\n# Total NA values\nsum(is.na(data))\n\n[1] 11604\n\n# NA values per column (top 8)\nna_per_column &lt;- sort(colSums(is.na(data)), decreasing = TRUE)\nhead(na_per_column, 8)\n\nrawpoll_mcmullin adjpoll_mcmullin  rawpoll_johnson  adjpoll_johnson \n            4178             4178             1409             1409 \n           grade       samplesize            state        startdate \n             429                1                0                0 \n\n# Replace NA values\nnew_data &lt;- data %&gt;%\n  mutate(\n    across(where(is.numeric), ~ ifelse(is.na(.), my_birth_year + k, .)),\n    across(where(is.character), ~ ifelse(is.na(.), paste0(my_first, \"_\", k), .)),\n    across(where(is.factor), ~ {\n      x &lt;- as.character(.)\n      x[is.na(x)] &lt;- paste0(my_first, \"_\", k)\n      x\n    })\n  )\n\n# Display rows from new dataset\nif (k %% 2 == 0) {\n  head(new_data, k)\n} else {\n  tail(new_data, k)\n}\n\n              state  startdate    enddate                pollster grade\n4188 South Carolina 2016-09-23 2016-10-06                   Ipsos    A-\n4189           Utah 2016-10-25 2016-10-31 Google Consumer Surveys     B\n4190  New Hampshire 2016-01-04 2016-01-06   Public Policy Polling    B+\n4191        Florida 2016-06-08 2016-06-19   Quinnipiac University    A-\n4192           Ohio 2016-06-08 2016-06-19   Quinnipiac University    A-\n4193       New York 2016-02-28 2016-03-03           Siena College     A\n4194 North Carolina 2016-09-27 2016-10-02   Quinnipiac University    A-\n4195 North Carolina 2016-02-14 2016-02-16               SurveyUSA     A\n4196 North Carolina 2016-05-20 2016-05-22   Public Policy Polling    B+\n4197       Kentucky 2016-09-30 2016-10-13                   Ipsos    A-\n4198        Florida 2016-07-30 2016-08-07   Quinnipiac University    A-\n4199   Pennsylvania 2016-06-08 2016-06-19   Quinnipiac University    A-\n4200           Ohio 2016-06-30 2016-07-11   Quinnipiac University    A-\n4201 North Carolina 2016-03-18 2016-03-20   Public Policy Polling    B+\n4202   South Dakota 2016-10-28 2016-11-02                   Ipsos    A-\n4203     Washington 2016-10-21 2016-11-02                   Ipsos    A-\n4204       Virginia 2016-09-16 2016-09-22                   Ipsos    A-\n4205      Wisconsin 2016-08-04 2016-08-07    Marquette University     A\n4206           Utah 2016-11-01 2016-11-07 Google Consumer Surveys     B\n4207         Oregon 2016-10-21 2016-11-02                   Ipsos    A-\n4208       Michigan 2016-01-23 2016-01-26                EPIC-MRA    A-\n     samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson\n4188        258         lv           46.67         48.25         2025.00\n4189        245         lv           28.18         29.39            8.40\n4190       1036          v           50.00         36.00         2025.00\n4191        975         rv           42.00         36.00            7.00\n4192        971         rv           38.00         36.00            8.00\n4193        800         rv           57.00         34.00         2025.00\n4194        507         lv           46.00         43.00            7.00\n4195       1250         lv           43.00         45.00         2025.00\n4196        928          v           41.00         43.00            3.00\n4197        336         lv           39.38         53.08         2025.00\n4198       1056         lv           43.00         43.00            7.00\n4199        950         rv           39.00         36.00            9.00\n4200        955         rv           36.00         37.00            7.00\n4201        843          v           44.00         42.00         2025.00\n4202        170         lv           28.45         47.20         2025.00\n4203        538         lv           46.71         38.33         2025.00\n4204        452         lv           46.54         40.04         2025.00\n4205        683         lv           47.00         34.00            9.00\n4206        286         lv           21.33         35.05            9.99\n4207        446         lv           46.46         37.41         2025.00\n4208        600         lv           43.00         41.00         2025.00\n     rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson\n4188             2025        46.20387      49.13322     2025.000000\n4189             2025        33.61454      36.01090        7.458243\n4190             2025        47.81869      35.91267     2025.000000\n4191             2025        46.44439      41.33270        2.791570\n4192             2025        42.46502      41.36491        3.791570\n4193             2025        56.98850      38.83402     2025.000000\n4194             2025        47.79437      44.86935        4.022323\n4195             2025        39.90517      44.40152     2025.000000\n4196             2025        43.28262      47.12021       -0.036293\n4197             2025        38.34430      54.36357     2025.000000\n4198             2025        45.19351      46.65680        3.448447\n4199             2025        43.35339      41.19061        4.791570\n4200             2025        40.73937      42.33380        2.936299\n4201             2025        42.13165      43.55006     2025.000000\n4202             2025        26.57791      45.43384     2025.000000\n4203             2025        45.56387      38.22545     2025.000000\n4204             2025        46.47852      40.48017     2025.000000\n4205             2025        48.74781      39.07778        4.705020\n4206             2025        26.65200      40.57738        9.705791\n4207             2025        45.12949      37.10720     2025.000000\n4208             2025        42.14966      42.05508     2025.000000\n     adjpoll_mcmullin\n4188             2025\n4189             2025\n4190             2025\n4191             2025\n4192             2025\n4193             2025\n4194             2025\n4195             2025\n4196             2025\n4197             2025\n4198             2025\n4199             2025\n4200             2025\n4201             2025\n4202             2025\n4203             2025\n4204             2025\n4205             2025\n4206             2025\n4207             2025\n4208             2025\n\n# Remaining NA values\nsum(is.na(new_data))\n\n[1] 0\n\n# anyNA check\nanyNA(new_data)\n\n[1] FALSE\n\n\n\nI also utilized Gemini to debug and correct errors in my R code.",
-    "crumbs": [
-      "Assignment 1"
     ]
   },
   {
@@ -122,5 +91,96 @@
     "title": "Yusuf Bora Çavdar's Analytics Lab",
     "section": "",
     "text": "My Blog\nThoughts, analytics, visualizations, and learning experiences.\nThis section will include posts related to data analytics, statistics, research projects, and personal development.\n\n\n\nBlog Section Under Construction\n\n\nI am currently preparing content for this section.\nFuture posts will include:\n\n\nData Analytics Projects\n\n\nStatistical Insights\n\n\nVisualization Techniques\n\n\nResearch Experiences\n\n\nLearning Notes and Reflections\n\n\nStay tuned for upcoming articles.\n\n\n\nBuilt with R and Quarto\n\n```\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project.html#decoding-higher-education",
+    "href": "project.html#decoding-higher-education",
+    "title": "Project Phase 1",
+    "section": "",
+    "text": "A Trend Analysis of Industrial Engineering Programs in Turkey"
+  },
+  {
+    "objectID": "project.html#research-team",
+    "href": "project.html#research-team",
+    "title": "Project Phase 1",
+    "section": "Research Team",
+    "text": "Research Team\n\n\n\nYusuf Bora Çavdar\n\n\nData Engineering · Visualization · Statistical Analysis\n\n\n\n\nOnur Furkan Gök\n\n\nResearch Design · Data Processing · Methodological Development"
+  },
+  {
+    "objectID": "project.html#problem-statement-motivation",
+    "href": "project.html#problem-statement-motivation",
+    "title": "Project Phase 1",
+    "section": "Problem Statement & Motivation",
+    "text": "Problem Statement & Motivation\nWhile university placement statistics are publicly available, there is often a lack of analytical perspective explaining why certain departments consistently outperform others in national rankings.\nAs Industrial Engineering students, our objective is to apply modern data analytics methodologies directly to our own academic domain.\nWe aim to identify the underlying drivers of success and regional demand for Industrial Engineering departments across Turkey over recent years."
+  },
+  {
+    "objectID": "project.html#data-strategy-sources",
+    "href": "project.html#data-strategy-sources",
+    "title": "Project Phase 1",
+    "section": "Data Strategy & Sources",
+    "text": "Data Strategy & Sources\n\nPrimary Source\n\nYÖK Atlas – Lisans Atlası\n\n\n\nExtraction Tool\n\nthestats R Package\nDeveloped by M. Çavuş and O. Aydın\n\n\n\nCore Variables\n\nNational base rankings\nProgram quotas\nDemand ratios\nFaculty indicators\nErasmus mobility\nStudent regional origins\n\n\n\nTemporal Coverage\n\n2018 – 2025"
+  },
+  {
+    "objectID": "project.html#proposed-methodology",
+    "href": "project.html#proposed-methodology",
+    "title": "Project Phase 1",
+    "section": "Proposed Methodology",
+    "text": "Proposed Methodology\nThe analysis is implemented using R (thestats, tidyverse, ggplot2) and reported through Quarto for full reproducibility.\n\nAnalytical Workflow\n\nData extraction and harmonization\nMissing value handling and preprocessing\nExploratory Data Analysis (EDA)\nTrend analysis and sector benchmarking\nCorrelation modeling\nInteractive visualization and reporting"
+  },
+  {
+    "objectID": "project.html#preliminary-timeline",
+    "href": "project.html#preliminary-timeline",
+    "title": "Project Phase 1",
+    "section": "Preliminary Timeline",
+    "text": "Preliminary Timeline\n\n\n\nPhase\nPlanned Activities\n\n\n\n\nWeeks 1–2\nData extraction, cleaning, preprocessing\n\n\nWeeks 3–4\nEDA, trend analysis, correlation modeling\n\n\nWeek 5\nFinal reporting, visualization refinement, presentation"
+  },
+  {
+    "objectID": "project.html#expected-project-output",
+    "href": "project.html#expected-project-output",
+    "title": "Project Phase 1",
+    "section": "Expected Project Output",
+    "text": "Expected Project Output\nThe final deliverable will be a fully reproducible analytical website hosted through GitHub Pages. The platform will include:\n\nInteractive visual analytics\nHistorical ranking trend exploration\nSector comparison dashboards\nCorrelation heatmaps\nIntegrated .RData reproducible datasets\nAdvanced Quarto-based reporting infrastructure"
+  },
+  {
+    "objectID": "project.html#research-motivation",
+    "href": "project.html#research-motivation",
+    "title": "Project Phase 1",
+    "section": "Research Motivation",
+    "text": "Research Motivation\nUniversity placement statistics in Turkey are publicly available, yet raw admission numbers alone fail to explain why certain Industrial Engineering departments consistently outperform others in national rankings.\nAs Industrial Engineering students, our objective is to apply analytical methodologies directly to our own academic domain. This project investigates how institutional capacity, regional location, academic mobility, and demand intensity collectively shape departmental competitiveness across Turkey.\nRather than treating placement data as isolated yearly statistics, we aim to construct a unified analytical framework capable of identifying the structural drivers behind academic prestige and student demand."
+  },
+  {
+    "objectID": "project.html#data-sources",
+    "href": "project.html#data-sources",
+    "title": "Project Phase 1",
+    "section": "Data Sources",
+    "text": "Data Sources\nOur analytical pipeline integrates multiple educational datasets into a reproducible research workflow.\n\n\n\n\n\n\n\nSource\nPurpose\n\n\n\n\nYÖK Atlas – Lisans Atlası\nOfficial placement statistics and ranking data\n\n\nthestats R Package\nDirect programmatic extraction into R\n\n\nInstitutional Indicators\nErasmus mobility, faculty size, demand metrics\n\n\n\n\nCore Variables\n\nNational base rankings\nProgram quotas\nDemand-to-quota ratios\nFaculty size indicators\nErasmus exchange mobility\nStudent regional origin distributions"
+  },
+  {
+    "objectID": "project.html#methodological-framework",
+    "href": "project.html#methodological-framework",
+    "title": "Project Phase 1",
+    "section": "Methodological Framework",
+    "text": "Methodological Framework\nThe project is implemented entirely in R using reproducible data science workflows.\n\nAnalytical Pipeline\n\nData Extraction & Harmonization\nMulti-year Industrial Engineering program data collected and standardized.\nData Cleaning & Feature Engineering\nMissing value handling, normalization, and derived metric generation.\nExploratory Data Analysis (EDA)\nTrend analysis, institutional benchmarking, and ranking shifts.\nCorrelation Modeling\nMeasuring relationships between academic capacity, mobility, demand, and ranking performance.\nInteractive Reporting\nVisualization and reporting infrastructure developed through Quarto."
+  },
+  {
+    "objectID": "project.html#expected-deliverables",
+    "href": "project.html#expected-deliverables",
+    "title": "Project Phase 1",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nThe final project output will include:\n\nInteractive analytical visualizations\nHistorical ranking trend exploration\nSector comparison dashboards\nCorrelation heatmaps\nDownloadable .RData datasets\nReproducible Quarto reporting infrastructure"
+  },
+  {
+    "objectID": "project.html#research-contributors",
+    "href": "project.html#research-contributors",
+    "title": "Project Phase 1",
+    "section": "Research Contributors",
+    "text": "Research Contributors\n\nYusuf Bora Çavdar\nData Engineering · Visualization · Statistical Analysis\nPortfolio:\nhttps://emu-hacettepe-analytics.github.io/emu430-spring2026-boracavdar/\n\n\n\nOnur Furkan Gök\nResearch Design · Data Processing · Methodological Development\nPortfolio:\nhttps://emu-hacettepe-analytics.github.io/emu430-spring2026-onurfgg/"
+  },
+  {
+    "objectID": "project.html#project-overview",
+    "href": "project.html#project-overview",
+    "title": "Project Phase 1",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis project investigates the structural and institutional factors shaping the success of Industrial Engineering departments across Turkey between 2018 and 2025.\nRather than treating placement statistics as isolated yearly figures, we aim to construct an integrated analytical framework capable of identifying the underlying drivers of academic prestige, student demand, and regional competitiveness."
   }
 ]

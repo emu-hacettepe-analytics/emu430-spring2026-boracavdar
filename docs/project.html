@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Our Course Project – Yusuf Bora Çavdar’s Analytics Lab</title>
+<title>project – Yusuf Bora Çavdar's Analytics Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -296,20 +296,35 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#project-phase-1-initialization" id="toc-project-phase-1-initialization" class="nav-link active" data-scroll-target="#project-phase-1-initialization">Project Phase 1: Initialization</a>
+  <li><a href="#project-phase-1" id="toc-project-phase-1" class="nav-link active" data-scroll-target="#project-phase-1">Project Phase 1</a>
   <ul class="collapse">
-  <li><a href="#project-title" id="toc-project-title" class="nav-link" data-scroll-target="#project-title">Project Title</a></li>
-  <li><a href="#team-member" id="toc-team-member" class="nav-link" data-scroll-target="#team-member">Team Member</a></li>
-  <li><a href="#project-objective" id="toc-project-objective" class="nav-link" data-scroll-target="#project-objective">Project Objective</a></li>
-  <li><a href="#data-set-description" id="toc-data-set-description" class="nav-link" data-scroll-target="#data-set-description">Data Set Description</a></li>
-  <li><a href="#preliminary-plan" id="toc-preliminary-plan" class="nav-link" data-scroll-target="#preliminary-plan">Preliminary Plan</a></li>
+  <li><a href="#decoding-higher-education" id="toc-decoding-higher-education" class="nav-link" data-scroll-target="#decoding-higher-education">Decoding Higher Education</a></li>
+  </ul></li>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#problem-statement-motivation" id="toc-problem-statement-motivation" class="nav-link" data-scroll-target="#problem-statement-motivation">Problem Statement &amp; Motivation</a></li>
+  <li><a href="#data-strategy-sources" id="toc-data-strategy-sources" class="nav-link" data-scroll-target="#data-strategy-sources">Data Strategy &amp; Sources</a>
+  <ul class="collapse">
+  <li><a href="#primary-source" id="toc-primary-source" class="nav-link" data-scroll-target="#primary-source">Primary Source</a></li>
+  <li><a href="#extraction-tool" id="toc-extraction-tool" class="nav-link" data-scroll-target="#extraction-tool">Extraction Tool</a></li>
+  <li><a href="#core-variables" id="toc-core-variables" class="nav-link" data-scroll-target="#core-variables">Core Variables</a></li>
+  <li><a href="#temporal-coverage" id="toc-temporal-coverage" class="nav-link" data-scroll-target="#temporal-coverage">Temporal Coverage</a></li>
+  </ul></li>
+  <li><a href="#proposed-methodology" id="toc-proposed-methodology" class="nav-link" data-scroll-target="#proposed-methodology">Proposed Methodology</a>
+  <ul class="collapse">
+  <li><a href="#analytical-workflow" id="toc-analytical-workflow" class="nav-link" data-scroll-target="#analytical-workflow">Analytical Workflow</a></li>
+  </ul></li>
+  <li><a href="#preliminary-timeline" id="toc-preliminary-timeline" class="nav-link" data-scroll-target="#preliminary-timeline">Preliminary Timeline</a></li>
+  <li><a href="#research-contributors" id="toc-research-contributors" class="nav-link" data-scroll-target="#research-contributors">Research Contributors</a>
+  <ul class="collapse">
+  <li><a href="#yusuf-bora-çavdar" id="toc-yusuf-bora-çavdar" class="nav-link" data-scroll-target="#yusuf-bora-çavdar">Yusuf Bora Çavdar</a></li>
+  <li><a href="#onur-furkan-gök" id="toc-onur-furkan-gök" class="nav-link" data-scroll-target="#onur-furkan-gök">Onur Furkan Gök</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -319,68 +334,221 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Project Phase 1</h1></header>
 
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Our Course Project</h1>
+
+
+
+<style>
+
+/* Hide Default Quarto Header */
+#title-block-header {
+  display: none;
+}
+
+/* Hero Section */
+.hero-container {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  color: #38bdf8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  max-width: 760px;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #64748b;
+}
+
+/* Glass Cards */
+.glass-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 30px;
+
+  padding: 3rem;
+
+  margin-bottom: 2rem;
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 45px rgba(15,23,42,0.08);
+}
+
+/* Typography */
+
+.glass-card h2 {
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.glass-card p,
+.glass-card li {
+  color: #475569;
+  line-height: 1.9;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th {
+  background: #f8fafc;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 1rem;
+  border-top:
+    1px solid rgba(15,23,42,0.06);
+}
+
+</style>
+<div class="hero-container">
+<section id="project-phase-1" class="level1 hero-content">
+
+<section id="decoding-higher-education" class="level2">
+<h2 class="anchored" data-anchor-id="decoding-higher-education">Decoding Higher Education</h2>
+<p>
+A Trend Analysis of Industrial Engineering Programs in Turkey
+</p>
+</section>
+</section>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="project-phase-1-initialization" class="level1">
-<h1>Project Phase 1: Initialization</h1>
-<section id="project-title" class="level2">
-<h2 class="anchored" data-anchor-id="project-title">Project Title</h2>
-<p><strong>Spatial Risk Assessment and Urban Transformation Prioritization for Istanbul: A Data-Driven Approach</strong></p>
+<section id="project-overview" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This project investigates the structural and institutional factors shaping the success of Industrial Engineering departments across Turkey between 2018 and 2025.</p>
+<p>Rather than treating placement statistics as isolated yearly figures, we aim to construct an integrated analytical framework capable of identifying the underlying drivers of academic prestige, student demand, and regional competitiveness.</p>
 </section>
-<section id="team-member" class="level2">
-<h2 class="anchored" data-anchor-id="team-member">Team Member</h2>
+<section id="problem-statement-motivation" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="problem-statement-motivation">Problem Statement &amp; Motivation</h2>
+<p>While university placement statistics are publicly available, there is often a lack of analytical perspective explaining why certain departments consistently outperform others in national rankings.</p>
+<p>As Industrial Engineering students, our objective is to apply modern data analytics methodologies directly to our own academic domain.</p>
+<p>We aim to identify the underlying drivers of success and regional demand for Industrial Engineering departments across Turkey over recent years.</p>
+</section>
+<section id="data-strategy-sources" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="data-strategy-sources">Data Strategy &amp; Sources</h2>
+<section id="primary-source" class="level3">
+<h3 class="anchored" data-anchor-id="primary-source">Primary Source</h3>
 <ul>
-<li><p><strong>Yusuf Bora Çavdar</strong></p></li>
-<li><p>Onur Furkan Gök</p></li>
+<li><strong>YÖK Atlas – Lisans Atlası</strong></li>
 </ul>
 </section>
-<section id="project-objective" class="level2">
-<h2 class="anchored" data-anchor-id="project-objective">Project Objective</h2>
-<p>The primary objective of this project is to develop a <strong>Decision Support Model</strong> to identify and prioritize neighborhoods in Istanbul for urban transformation. By integrating building age, official structural needs, and population density, the project aims to calculate a <strong>“Seismic Vulnerability Index.”</strong> This model will help in optimizing the allocation of urban renewal resources to the areas with the highest potential impact on human life and safety.</p>
-</section>
-<section id="data-set-description" class="level2">
-<h2 class="anchored" data-anchor-id="data-set-description">Data Set Description</h2>
-<p>The analysis will be grounded on three primary datasets sourced from the <strong>IBB Open Data Portal</strong> and <strong>TUIK</strong>:</p>
-<ol type="1">
-<li><p><strong>Building Inventory Dataset:</strong> Contains neighborhood-level data on the number of buildings categorized by construction year (pre-1980, 1980-2000, post-2000) and floor counts.</p></li>
-<li><p><strong>Urban Transformation Requirement Data:</strong> Provides official records of buildings identified as “In Need of Transformation” vs.&nbsp;“Not in Need” across districts.</p></li>
-<li><p><strong>Municipal Population Dataset (2019-2024):</strong> A time-series dataset showing population distribution and density across Istanbul’s 39 districts.</p></li>
-</ol>
-</section>
-<section id="preliminary-plan" class="level2">
-<h2 class="anchored" data-anchor-id="preliminary-plan">Preliminary Plan</h2>
-<p>The project will follow a structured Data Science workflow:</p>
+<section id="extraction-tool" class="level3">
+<h3 class="anchored" data-anchor-id="extraction-tool">Extraction Tool</h3>
 <ul>
-<li><p><strong>Data Preprocessing:</strong> Cleaning and merging the datasets using <code>dplyr</code> and <code>tidyr</code>. Handling “Wide” to “Long” format conversions for population trends.</p></li>
-<li><p><strong>Exploratory Data Analysis (EDA):</strong> Visualizing the distribution of aged buildings and population hotspots using <code>ggplot2</code>.</p></li>
-<li><p><strong>Index Calculation:</strong> Implementing a weighted risk formula to score each neighborhood/district:</p>
-<p>RiskIndex​=(Age_Factor×0.4)+(Transformation_Need×0.3)+(Population_Density×0.3)</p></li>
-<li><p><strong>Final Output:</strong> A dynamic Quarto report hosted on GitHub Pages, featuring an interactive risk ranking and priority map of Istanbul.</p></li>
+<li><strong>thestats R Package</strong><br>
+Developed by <em>M. Çavuş</em> and <em>O. Aydın</em></li>
 </ul>
-
-
+</section>
+<section id="core-variables" class="level3">
+<h3 class="anchored" data-anchor-id="core-variables">Core Variables</h3>
+<ul>
+<li>National base rankings</li>
+<li>Program quotas</li>
+<li>Demand ratios</li>
+<li>Faculty indicators</li>
+<li>Erasmus mobility</li>
+<li>Student regional origins</li>
+</ul>
+</section>
+<section id="temporal-coverage" class="level3">
+<h3 class="anchored" data-anchor-id="temporal-coverage">Temporal Coverage</h3>
+<ul>
+<li><strong>2018 – 2025</strong></li>
+</ul>
 </section>
 </section>
+<section id="proposed-methodology" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="proposed-methodology">Proposed Methodology</h2>
+<p>The analysis is implemented using R (<code>thestats</code>, <code>tidyverse</code>, <code>ggplot2</code>) and reported through Quarto for full reproducibility.</p>
+<section id="analytical-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="analytical-workflow">Analytical Workflow</h3>
+<ul>
+<li>Data extraction and harmonization</li>
+<li>Missing value handling and preprocessing</li>
+<li>Exploratory Data Analysis (EDA)</li>
+<li>Trend analysis and sector benchmarking</li>
+<li>Correlation modeling</li>
+<li>Interactive visualization and reporting</li>
+</ul>
+</section>
+</section>
+<section id="preliminary-timeline" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="preliminary-timeline">Preliminary Timeline</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Planned Activities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Weeks 1–2</strong></td>
+<td>Data extraction, cleaning, preprocessing</td>
+</tr>
+<tr class="even">
+<td><strong>Weeks 3–4</strong></td>
+<td>EDA, trend analysis, correlation modeling</td>
+</tr>
+<tr class="odd">
+<td><strong>Week 5</strong></td>
+<td>Final reporting, visualization refinement, presentation</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="research-contributors" class="level2 glass-card">
+<h2 class="anchored" data-anchor-id="research-contributors">Research Contributors</h2>
+<section id="yusuf-bora-çavdar" class="level3">
+<h3 class="anchored" data-anchor-id="yusuf-bora-çavdar">Yusuf Bora Çavdar</h3>
+<p>Data Engineering · Visualization · Statistical Analysis</p>
+<p>Portfolio:<br>
+https://emu-hacettepe-analytics.github.io/emu430-spring2026-boracavdar/</p>
+<p><br></p>
+</section>
+<section id="onur-furkan-gök" class="level3">
+<h3 class="anchored" data-anchor-id="onur-furkan-gök">Onur Furkan Gök</h3>
+<p>Research Design · Data Processing · Methodological Development</p>
+<p>Portfolio:<br>
+https://emu-hacettepe-analytics.github.io/emu430-spring2026-onurfgg/</p>
+</section>
+</section>
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

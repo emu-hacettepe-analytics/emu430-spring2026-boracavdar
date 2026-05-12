@@ -147,7 +147,6 @@ ul.task-list li input[type="checkbox"] {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* ===== GLOBAL ===== */
-
 body{
   background:#f4f6f5;
   font-family:'Inter', sans-serif;
@@ -159,8 +158,7 @@ main.content{
   padding-top:8px !important;
 }
 
-/* ===== NAVBAR ===== */
-
+/* ===== NAVBAR (AYNI) ===== */
 .navbar{
   background:#163a2d !important;
   border-bottom:1px solid rgba(255,255,255,0.06);
@@ -171,28 +169,25 @@ main.content{
   color:#f9fafb !important;
   font-weight:500;
   font-size:0.95rem;
-  transition:0.2s ease;
 }
 
 .navbar a:hover{
   color:#d1fae5 !important;
 }
 
-/* ===== HERO ===== */
-
+/* ===== HERO (AYNI) ===== */
 .hero{
   background:#1f4d3a;
   color:white;
-  padding:85px 70px;
+  padding:80px 65px;
   border-radius:18px;
-  margin-bottom:22px;
+  margin-bottom:18px;
 }
 
 .hero h1{
   font-size:4.2rem;
   font-weight:700;
   letter-spacing:-2px;
-  margin-bottom:18px;
   line-height:0.95;
 }
 
@@ -213,159 +208,162 @@ main.content{
   margin:0;
 }
 
+/* ===== GRID (SADECE DÜZENLEME) ===== */
+.grid{
+  row-gap:14px;
+  column-gap:14px;
+}
+
 /* ===== CARDS ===== */
-
-.card-box{
-  background:white;
-  border-radius:16px;
-  padding:28px;
-  border:1px solid #e5e7eb;
-  height:100%;
-  transition:0.2s ease;
-}
-
-.card-box:hover{
-  border-color:#cbd5e1;
-}
-
-.card-box h3{
-  font-size:1.08rem;
-  font-weight:600;
-  color:#163a2d;
-  margin-bottom:16px;
-}
-
-.card-box ul{
-  padding-left:18px;
-  margin-bottom:16px;
-}
-
-.card-box li{
-  margin-bottom:8px;
-  color:#4b5563;
-  line-height:1.7;
-}
-
-.card-box p{
-  color:#4b5563;
-  line-height:1.8;
-  margin:0;
-}
-
-/* ===== STATS ===== */
-
+.card-box,
+.feature,
 .stats{
   background:white;
   border-radius:16px;
-  padding:30px;
-  text-align:center;
-  border:1px solid #e5e7eb;
-}
-
-.stats h2{
-  font-size:2.5rem;
-  font-weight:700;
-  color:#163a2d;
-  margin-bottom:6px;
-  letter-spacing:-1px;
-}
-
-.stats p{
-  margin:0;
-  color:#6b7280;
-  font-size:0.95rem;
-}
-
-/* ===== FEATURE ===== */
-
-.feature{
-  background:white;
-  border-radius:16px;
-  padding:28px;
+  padding:22px;
   border:1px solid #e5e7eb;
   height:100%;
+  box-sizing:border-box;
 }
 
+/* başlık */
+.card-box h3,
 .feature h3{
   font-size:1.08rem;
   font-weight:600;
   color:#163a2d;
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
-.feature p{
+/* text */
+.card-box p,
+.feature p,
+.card-box li{
   color:#4b5563;
-  line-height:1.8;
-  margin:0;
+  line-height:1.7;
+}
+
+/* stats */
+.stats{
+  text-align:center;
+}
+
+.stats h2{
+  font-size:2.3rem;
+  font-weight:700;
+  color:#163a2d;
+  margin-bottom:5px;
 }
 
 /* ===== SPACING ===== */
-
 .spacer{
-  height:18px;
+  height:12px;
 }
 
 /* ===== FOOTER ===== */
-
 .footer{
-  margin-top:34px;
+  margin-top:20px;
   text-align:center;
   color:#6b7280;
   font-size:0.9rem;
-  padding:12px;
 }
 
 .footer strong{
   color:#163a2d;
-  font-weight:600;
 }
 
+/* === TIMELINE + CONTRIBUTORS KÜÇÜLT === */
+
+/* Feature bloklarını genel olarak biraz kompakt yap */
+.feature{
+  padding:20px 22px !important;
+}
+
+/* Timeline tablo daha sıkı */
+.feature table{
+  font-size:0.92rem;
+}
+
+.feature th,
+.feature td{
+  padding:6px 8px !important;
+  line-height:1.4;
+}
+
+/* Contributors bölümü metin sıkılığı */
+.feature strong{
+  font-size:0.98rem;
+}
+
+.feature br{
+  line-height:1.2;
+}
+
+/* Eğer bu iki blok arası boşluk fazlaysa */
+.feature + .feature{
+  margin-top:10px !important;
+}
 </style>
 <div class="hero">
-Yusuf Bora Çavdar
 <div class="hero-subtitle">
-<p>Data Analytics • Machine Learning • Visualization</p>
+<p>EMU430 • PROJECT PHASE 1</p>
 </div>
+<section id="decoding-higher-education" class="level1">
+<h1>Decoding Higher Education</h1>
 <p>
-I explore data, develop analytical systems, and create visual narratives using modern data science tools. This website presents my projects, research, and analytical work developed with R and Quarto.
+A Trend Analysis of Industrial Engineering Programs in Turkey
 </p>
+</section>
 </div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="card-box">
-<p>About Data Analytics Statistical Modeling Data Visualization Reproducible Research Machine Learning</p>
-<p>I focus on transforming complex datasets into clear and meaningful insights.</p>
+<!-- ===================== SECTION 1 ===================== -->
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<section id="project-objective" class="level3 card-box">
+<h3 class="anchored" data-anchor-id="project-objective">Project Objective</h3>
+<p>This project investigates Industrial Engineering departments in Turkey (2018–2025).</p>
+<p>We analyze how academic capacity, region, demand, and mobility affect success.</p>
+</section>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="card-box">
-<p>Current Focus Higher Education Analytics Interactive Dashboards Statistical Exploration Visualization Systems Research Projects</p>
-<p>Currently improving analytical storytelling and presentation design.</p>
-</div>
+<div class="g-col-12 g-col-md-6">
+<section id="problem-statement" class="level3 card-box">
+<h3 class="anchored" data-anchor-id="problem-statement">Problem Statement</h3>
+<p>University ranking data exists, but explanations are limited.</p>
+<p>This project focuses on <em>why</em> some departments perform better over time.</p>
+</section>
 </div>
 </div>
 <div class="spacer">
 
 </div>
-<div class="columns">
-<div class="column" style="width:33%;">
+<!-- ===================== STATS ===================== -->
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
 <div class="stats">
-10+
+<h2 class="anchored">
+2018–2025
+</h2>
 <p>
-Projects
+Time Span
 </p>
 </div>
-</div><div class="column" style="width:33%;">
+</div>
+<div class="g-col-12 g-col-md-4">
 <div class="stats">
+<h2 class="anchored">
 R
+</h2>
 <p>
 Main Tool
 </p>
 </div>
-</div><div class="column" style="width:33%;">
+</div>
+<div class="g-col-12 g-col-md-4">
 <div class="stats">
-Data
+<h2 class="anchored">
+Quarto
+</h2>
 <p>
-Driven Thinking
+Reporting
 </p>
 </div>
 </div>
@@ -373,28 +371,75 @@ Driven Thinking
 <div class="spacer">
 
 </div>
-<div class="columns">
-<div class="column" style="width:33%;">
-<div class="feature">
-<p>Visualization</p>
-<p>Creating clean and modern analytical visualizations with R and ggplot2.</p>
+<!-- ===================== FEATURES ===================== -->
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<section id="data-strategy" class="level3 feature">
+<h3 class="anchored" data-anchor-id="data-strategy">Data Strategy</h3>
+<ul>
+<li>YÖK Atlas</li>
+<li>R datasets</li>
+<li>Multi-year IE data</li>
+<li>Mobility indicators</li>
+</ul>
+</section>
 </div>
-</div><div class="column" style="width:33%;">
-<div class="feature">
-<p>Statistical Analysis</p>
-<p>Exploring trends, relationships, and patterns hidden inside data.</p>
+<div class="g-col-12 g-col-md-6">
+<section id="methodology" class="level3 feature">
+<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
+<ul>
+<li>Data cleaning</li>
+<li>EDA</li>
+<li>Correlation analysis</li>
+<li>Visualization</li>
+<li>Reporting in Quarto</li>
+</ul>
+</section>
 </div>
-</div><div class="column" style="width:33%;">
-<div class="feature">
-<p>Machine Learning</p>
-<p>Building predictive models and analytical workflows for real-world datasets.</p>
 </div>
+<div class="spacer">
+
 </div>
+<!-- ===================== TABLE ===================== -->
+<section id="timeline" class="level3 feature">
+<h3 class="anchored" data-anchor-id="timeline">Timeline</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Work</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1–2</td>
+<td>Data preparation</td>
+</tr>
+<tr class="even">
+<td>3–4</td>
+<td>Analysis</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Reporting</td>
+</tr>
+</tbody>
+</table>
+</section>
+<div class="spacer">
+
 </div>
+<!-- ===================== CONTRIBUTORS ===================== -->
+<section id="contributors" class="level3 feature">
+<h3 class="anchored" data-anchor-id="contributors">Contributors</h3>
+<p><strong>Yusuf Bora Çavdar</strong><br>
+Data analysis &amp; visualization</p>
+<p><strong>Onur Furkan Gök</strong><br>
+Research &amp; methodology</p>
+</section>
 <div class="footer">
 <p>Built with <strong>R</strong> and <strong>Quarto</strong></p>
 </div>
-<p>```</p>
 
 
 
